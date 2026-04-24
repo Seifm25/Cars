@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    overflow: hidden;
+    background: black;
+}
+
+/* ================= INTRO ================= */
+.intro {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transition: 1s ease;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* blur أخف + احترافي */
+.intro.blur {
+    filter: blur(8px) brightness(1.4);
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.85); /* بدل الأزرق */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    opacity: 0;
+    transform: scale(0.98);
+    transition: 1s ease;
+}
+
+/* يظهر */
+.contact.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ================= FORM ================= */
+form {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(12px);
+
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+
+    box-shadow: 0 0 30px rgba(255,255,255,0.05);
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.1);
+    color: white;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* دخول الكونتاكت بشكل سينمائي */
+.contact {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    transition: 1s ease;
+}
+
+/* لما تظهر */
+.contact.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* glow خفيف للفورم */
+form {
+    box-shadow: 0 0 40px rgba(255,255,255,0.08);
+}
