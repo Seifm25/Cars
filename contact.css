@@ -1,3 +1,12 @@
+:root{
+--contactbac: rgba(0,0,0,0.85);
+--text:white;
+--form: rgba(255,255,255,0.06);
+--formshad: rgba(255,255,255,0.05);
+--inpBtn-hov:white;
+--forshad: rgba(255,255,255,0.08);
+--inperea: rgba(255,255,255,0.1);
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +16,6 @@
 body {
     font-family: Arial;
     overflow: hidden;
-    background: black;
 }
 
 /* ================= INTRO ================= */
@@ -37,12 +45,12 @@ video {
     width: 100%;
     height: 100vh;
 
-    background: rgba(0,0,0,0.85); /* بدل الأزرق */
+    background: var(--contactbac); /* بدل الأزرق */
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: white;
+    color: var(--text);
 
     opacity: 0;
     transform: scale(0.98);
@@ -57,14 +65,14 @@ video {
 
 /* ================= FORM ================= */
 form {
-    background: rgba(255,255,255,0.06);
+    background: var(--form);
     backdrop-filter: blur(12px);
 
     padding: 25px;
     border-radius: 12px;
     width: 320px;
 
-    box-shadow: 0 0 30px rgba(255,255,255,0.05);
+    box-shadow: 0 0 30px var(--formshad);
 }
 
 input, textarea {
@@ -75,8 +83,8 @@ input, textarea {
     border: none;
     border-radius: 8px;
 
-    background: rgba(255,255,255,0.1);
-    color: white;
+    background: var(--inperea);
+    color: var(--text);
     outline: none;
 }
 
@@ -86,7 +94,7 @@ button {
     border: none;
     border-radius: 8px;
 
-    background: white;
+    background: var(--text);
     color: black;
     font-weight: bold;
     cursor: pointer;
@@ -95,7 +103,7 @@ button {
 }
 
 button:hover {
-    background: #ddd;
+    background: var(--text);
 }
 
 /* دخول الكونتاكت بشكل سينمائي */
@@ -113,5 +121,5 @@ button:hover {
 
 /* glow خفيف للفورم */
 form {
-    box-shadow: 0 0 40px rgba(255,255,255,0.08);
+    box-shadow: 0 0 40px var(--forshad);
 }

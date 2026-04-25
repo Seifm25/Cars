@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style-au.css">
+    <link href="styleHome.css" rel="stylesheet">
+   
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="nav-links" class="nav-links">
+            <a href="login.html">Home</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                <div id="cars-dropdown" class="dropdown-content">
+                    <a href="#">BMW</a>
+                    <a href="#">Mercedes</a>
+                    <a href="#">Lamborghini</a>
+                    <a href="#">Ferrari</a>
+                </div>
+            </div>
+            <a href="about-au.html">About</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+<div class="about-container">
+    <div class="about-content">
+        
+
+        <div class="about-header-section">
+            <div class="about-badge">
+                <i class="fas fa-car"></i> Since 2014
+            </div>
+            <h1>About Us</h1>
+            <p class="tagline"><i class="fas fa-medal" style="margin-right: 8px; color:#ff9;"></i> Over 10 years of trust. <strong>Your first destination</strong> for guaranteed cars with full maintenance and competitive prices.</p>
+        </div>
+
+ 
+        <div class="hero-video">
+            <video id="myVideo" autoplay="" muted="" loop="" playsinline="" disablepictureinpicture="" preload="auto">
+                <source src="vedio/WhatsApp Video 2026-04-25 at 3.22.53 PM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-text">
+                <div class="section-icon"><i class="fas fa-star-of-life"></i></div>
+                <h2>Why Choose Us?</h2>
+                <p>With over a decade of excellence, we've built a reputation based on transparency, quality, and customer satisfaction. Every vehicle in our showroom is hand-selected by automotive experts who understand what truly matters to discerning drivers.</p>
+                <ul class="custom-list">
+                    <li><i class="fas fa-check-circle"></i> 120-point technical inspection</li>
+                    <li><i class="fas fa-check-circle"></i> Free vehicle history report</li>
+                    <li><i class="fas fa-check-circle"></i> Extended warranty options</li>
+                    <li><i class="fas fa-check-circle"></i> Competitive financing rates</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <img src="imges/first.jpeg" alt="Premium car showroom floor with luxury vehicles" loading="eager">
+            </div>
+        </div>
+
+
+        <div class="section reverse">
+            <div class="section-image">
+                <img src="imges/second.jpeg" alt="Luxury red sports car interior and elegant showroom" loading="eager">
+            </div>
+            <div class="section-text">
+                <div class="section-icon"><i class="fas fa-car-side"></i></div>
+                <h2>Wide Range of Vehicles</h2>
+                <p>Our showroom features from the world's leading manufacturers. Whether you're looking for a luxury sedan, a powerful SUV, a sports car, or an economical city car, we have the perfect vehicle for you.</p>
+                <p>We update our inventory weekly to bring you the latest models and the best deals on vehicles. Every car on our lot is hand-selected for quality and value, ensuring you drive away with confidence.</p>
+                <p><i class="fas fa-gem" style="color:#ff9;"></i> <strong>Premium selection</strong> including Mercedes-Benz, BMW, Lamborghini &amp; more.</p>
+            </div>
+        </div>
+
+  
+        <div class="section">
+            <div class="section-text">
+                <div class="section-icon"><i class="fas fa-shield-alt"></i></div>
+                <h2>Quality &amp; Trust</h2>
+                <p>Before any car reaches our showroom floor, it undergoes a <strong>120-point technical inspection</strong>. We check the engine, transmission, brakes, electrical systems, and body condition to ensure everything works perfectly.</p>
+                <p>You also get a <strong>complete vehicle history report</strong> showing accidents, mileage history, and previous maintenance records. No hidden surprises – just honest cars at fair prices backed by an extended warranty option.</p>
+                <div class="trust-badge">
+                    <i class="fas fa-handshake"></i> 100% transparency – independent inspection welcome
+                </div>
+            </div>
+            <div class="section-image">
+                <img src="imges/third.jpeg" alt="Car mechanic performing quality inspection" loading="eager">
+            </div>
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <a href="contact.html" class="btn-cta"><i class="fas fa-phone-alt" style="margin-right: 8px;"></i> 📞 Book a Test Drive Now</a>
+        
+    </div>
+</div>
+<script src="script-au.js"></script>
+<script src="scriptHome.js"></script>
+
+</body></html>

@@ -109,3 +109,14 @@ passworrdInput.addEventListener('keypress', function (e) {
         console.log("sending your data");
     }
 });
+function togglePassVisibility(inputId, iconElement) {
+    const passInput = document.getElementById(inputId);
+    
+    if (passInput.type === "password") {
+        passInput.type = "text";
+        iconElement.classList.replace("fa-eye", "fa-eye-slash");
+    } else {
+        passInput.type = "password";
+        iconElement.classList.replace("fa-eye-slash", "fa-eye");
+    }
+}

@@ -1,6 +1,17 @@
+:root{
+--body:black;
+--barhom-back: white;
+--nav-links-backhover: rgba(128, 0, 0, 0.15);
+--homborder: rgba(255, 255, 255, 0.1);
+--navshadow: rgba(0, 0, 0, 0.5);
+--text:white;
+--texthovernav-border-btn:#c13b3b;
+--dropdown-contentbac: rgba(0, 0, 0, 0.2);
+--login-btnhoverbac:  rgba(128, 0, 0, 0.603);
+}
 body {
-    background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--body);
 }
 
 .menu {
@@ -15,7 +26,7 @@ body {
 .bar {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: var(--barhom-back);
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 2px;
@@ -38,14 +49,14 @@ body {
     left: -280px; 
     width: 260px;
     height: 100vh;
-    background-color: rgba(128, 0, 0, 0.15); 
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--nav-links-backhover); 
+    border-right: 1px solid  var(--nav-links-backhover); 
     display: flex;
     flex-direction: column;
     padding-top: 100px;
     transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 1000;
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 0 30px var(--navshadow);
 }
 
 .nav-links.active {
@@ -54,7 +65,7 @@ body {
 .nav-links a {
     padding: 15px 30px;
     text-decoration: none;
-    color: white;
+    color: var(--text);
     font-size: 18px;
     display: block;
     transition: 0.3s;
@@ -62,15 +73,15 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--nav-links-backhover);
     padding-left: 40px; 
-    color: #c13b3b;
+    color: var(--texthovernav-border-btn);
 }
 .dropdown-content {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--dropdown-contentbac);
     transition: all 0.4s ease-in-out;
     padding-left: 20px;
 }
@@ -83,7 +94,18 @@ body {
 
 .dropdown-content a {
     font-size: 16px;
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid var(--homborder);
+}
+#video-background {
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(1.5);
+    width: 100vh; 
+    height: 100vw; 
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(30%); 
 }
 .top-right-auth {
     position: fixed;
@@ -93,19 +115,18 @@ body {
 }
 .login-btn {
     text-decoration: none;
-    color: white;
+    color: var(--text);
     font-size: 14px;
     font-weight: bold;
     padding: 10px 25px;
-    border: 1px solid #c13b3b; 
+    border: 1px solid var(--texthovernav-border-btn); 
     border-radius: 4px;
     transition: all 0.3s ease;
     text-transform: uppercase;
 }
 .login-btn:hover {
-    background-color: rgba(128, 0, 0, 0.603);
-    color: white;
-    box-shadow: 0 0 15px rgba(193, 59, 59, 0.4);
+    background-color: var(--login-btnhoverbac);
+    color: var(--text);
     transform: translateY(-2px);
 }
 @media (max-width: 480px) {
