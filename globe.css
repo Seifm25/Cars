@@ -46,16 +46,18 @@
 
 }
 .light-icon{
-    display: none;
-}
-body.darkMode .dark-icon {
-    display: none;
-}
-
-body.darkMode .light-icon {
     display: block;
 }
-body.darkMode {
+.dark-icon{
+    display: none;
+}
+body.lightMode .light-icon{
+    display: none;
+}
+body.lightMode .dark-icon{
+    display: block;
+}
+body.lightMode {
     /* Navbar & Global - Dark */
     --barhom-back: #121212;
     --text: white; 
