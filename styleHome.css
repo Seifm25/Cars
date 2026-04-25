@@ -8,6 +8,7 @@
 --texthovernav-border-btn:#c13b3b;
 --dropdown-contentbac: rgba(0, 0, 0, 0.2);
 --login-btnhoverbac:  rgba(128, 0, 0, 0.603);
+--log:white;
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -115,7 +116,7 @@ body {
 }
 .login-btn {
     text-decoration: none;
-    color: var(--text);
+    color: var(--log);
     font-size: 14px;
     font-weight: bold;
     padding: 10px 25px;
@@ -126,7 +127,7 @@ body {
 }
 .login-btn:hover {
     background-color: var(--login-btnhoverbac);
-    color: var(--text);
+    color: var(--log);
     transform: translateY(-2px);
 }
 @media (max-width: 480px) {
