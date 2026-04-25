@@ -17,6 +17,35 @@ body {
     color: white;
     direction: ltr; 
 }
+#theme-switch{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: 1000;
+}
+#theme-switch img{
+    width: 30px;
+    height: auto;
+    transition: 0.3s;
+
+}
+.light-icon{
+    display: block; 
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+}
+.dark-icon{
+    display: none;
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+
+}
 
 .contact-container {
     display: flex;
