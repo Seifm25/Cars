@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Login Page </title>
+    <title>Login Page</title>
     <link href="styleHome.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="menu" id="menu-icon" onclick="toggleMenu()">
+        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
 
-    <nav id="nav-links" class="nav-links">
-        <a href="login.html">Home</a>
-        <div class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
-            <div id="cars-dropdown" class="dropdown-content">
-                <a href="#">BMW</a>
-                <a href="#">Mercedes</a>
-                <a href="#">Lamborghini</a>
-                <a href="#">Ferrari</a>
+        <nav id="nav-links" class="nav-links">
+            <a href="login.html">Home</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                <div id="cars-dropdown" class="dropdown-content">
+                    <a href="#">BMW</a>
+                    <a href="#">Mercedes</a>
+                    <a href="#">Lamborghini</a>
+                    <a href="#">Ferrari</a>
+                </div>
             </div>
-        </div>
-        <a href="#">About</a>
-        <a href="contact.html">Contact us</a>
-    </nav>
+            <a href="#">About</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
     </header>
 
     <div class="container" id="container">
@@ -43,18 +43,22 @@
                     <a href="https://www.google.com/" class="icon" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
                     <a href="https://www.instagram.com/" class="icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com/" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    
-                    
                 </div>
-                <span><b>or use your email for registration </b></span>
+                <span><b>or use your email for registration</b></span>
                 <input type="text" placeholder="Name" name="username">
                 <input type="email" placeholder="Email" name="email">
-                <input type="password" placeholder="Password" name="pass">
-                <button>Sign Up</button>
+                
+                <div class="password-field">
+                    <input type="password" placeholder="Password" name="pass" id="signup-pass">
+                    <i class="fa-solid fa-eye toggle-password" onclick="togglePassVisibility('signup-pass', this)"></i>
+                </div>
+                
+                <button type="button">Sign Up</button>
             </form>
         </div>
+
         <div class="form-container sign-in">
-            <form  >
+            <form>
                 <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/" class="icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -62,13 +66,19 @@
                     <a href="https://www.instagram.com/" class="icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com/" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <span><b>or use your email password </b></span>
+                <span><b>or use your email password</b></span>
                 <input type="email" placeholder="Email" name="em">
-                <input type="password" placeholder="Password" name="password">
+                
+                <div class="password-field">
+                    <input type="password" placeholder="Password" name="password" id="signin-pass">
+                    <i class="fa-solid fa-eye toggle-password" onclick="togglePassVisibility('signin-pass', this)"></i>
+                </div>
+                
                 <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
+                <button type="button">Sign In</button>
             </form>
         </div>
+
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
@@ -88,5 +98,4 @@
     <script src="script.js"></script>
     <script src="scriptHome.js"></script>
 </body>
-
 </html>
