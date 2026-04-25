@@ -19,7 +19,7 @@
 }
 
 
-body.dark-mode {
+/* body.dark-mode {
     --body-bg-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     --container-bg: #1e1e1e;
     --home-bg: #000000;
@@ -34,7 +34,7 @@ body.dark-mode {
     --text-muted: #aaaaaa;
     --section-bg: rgba(255, 255, 255, 0.03);
     --card-bg: rgba(255, 255, 255, 0.08);
-}
+} */
 
 * {
     margin: 0;
