@@ -85,3 +85,36 @@ body {
     font-size: 16px;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
+.top-right-auth {
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    z-index: 1002;
+}
+.login-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 1px solid #c13b3b; 
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+.login-btn:hover {
+    background-color: rgba(128, 0, 0, 0.603);
+    color: white;
+    box-shadow: 0 0 15px rgba(193, 59, 59, 0.4);
+    transform: translateY(-2px);
+}
+@media (max-width: 480px) {
+    .top-right-auth {
+        top: 20px;
+        right: 15px;
+    }
+    .login-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

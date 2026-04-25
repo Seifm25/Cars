@@ -3,14 +3,13 @@ const intro = document.querySelector(".intro");
 const contact = document.getElementById("contact");
 
 /* لما الفيديو يخلص فعليًا */
-video.addEventListener("ended", () => {
-
-    // 1 - blur على الفيديو
-    intro.classList.add("blur");
-
-    // 2 - بعد لحظة نظهر الكونتاكت
-    setTimeout(() => {
-        contact.classList.add("show");
-    }, 600);
-
+video.addEventListener("timeupdate", () => {
+    if (video.currentTime >= 0.5) { 
+        intro.classList.add("blur");
+        
+        // تقليل الـ Timeout لظهور أسرع للفورم
+        setTimeout(() => {
+            contact.classList.add("show");
+        }, 100); // 100ms فقط ليظهر فوراً مع الـ blur
+    }
 });
