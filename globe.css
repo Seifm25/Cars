@@ -46,35 +46,55 @@
 
 }
 .light-icon{
-    display: block;
+    display: block; 
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
 }
 .dark-icon{
     display: none;
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+
 }
 body.lightMode .light-icon{
     display: none;
 }
 body.lightMode .dark-icon{
     display: block;
+    filter: invert(1);
 }
 body.lightMode {
-    /* Navbar & Global - Dark */
-    --barhom-back: #121212;
-    --text: white; 
+    /* Navbar & Global - light */
+    --barhom-back: rgba(255, 255, 255, 0.8);
+    --text: black; 
     --navshadow: rgba(255, 255, 255, 0.774);
     --dropdown-contentbac: rgba(255, 255, 255, 0.1);
 
-    /* Home Page - Dark */
-    --bodybac: #1a1a1a;
+    /* Home Page - light */
+    /* --bodybac: #1a1a1a;
     --containerbac: #2d2d2d;
     --cont-a: #eee;
     --contbtnbac: #444;
     --contform: #2d2d2d;
-    --tog-bac: #e74c3c;
+    --tog-bac: #e74c3c; */
 
-    /* Login & Contact - Dark */
+    --bodybac: #ffffff; 
+    --containerbac: #f9f9f9; 
+    --cont-a: #333;
+    --contbtnbac: #eee;
+    --contform: #ffffff;
+    --tog-bac: #ff4d6d;
+
+    /* Login & Contact - light */
+
+    --contactbac:rgba(255, 255, 255, 0.9); 
+    --form:rgba(0, 0, 0, 0.03);
+    --formshad:rgba(0, 0, 0, 0.1);
+    --forshad:rgba(0, 0, 0, 0.05);
     --contactbac: rgba(0, 0, 0, 0.85); 
     --form: rgba(255, 255, 255, 0.06);
     --formshad: rgba(255, 255, 255, 0.05);
-    --forshad: rgba(255, 255, 255, 0.08);
+    --forshad: rgba(255, 255, 255, 0.08); 
 }
