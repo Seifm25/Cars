@@ -39,7 +39,7 @@ body {
     width: 260px;
     height: 100vh;
     background-color: rgba(128, 0, 0, 0.15); 
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -105,7 +105,6 @@ body {
 .login-btn:hover {
     background-color: rgba(128, 0, 0, 0.603);
     color: white;
-    box-shadow: 0 0 15px rgba(193, 59, 59, 0.4);
     transform: translateY(-2px);
 }
 @media (max-width: 480px) {
