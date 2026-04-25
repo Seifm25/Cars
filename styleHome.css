@@ -118,3 +118,56 @@ body {
         font-size: 12px;
     }
 }
+/* ---------------------------------------- */
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    bottom: 30px;
+    /* عشان يثبت الحاويه ف مكان معين */
+    position: fixed;
+    width: 100%;
+}
+.login{
+    display: inline-block;
+}
+.box{
+    width: 70px;
+    height: 70px;
+    /* background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* حركه مرنه */
+    transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* تأثير الزجاج الضباب */
+    backdrop-filter: blur(5px);
+}
+/* هناعشان تبقي قريبه من اخواتها */
+.audi{
+    margin-right:-50px;
+}
+/* هنا تكبر شوسه عشان صغيره */
+.Mercedes{
+    width: 125px;
+}
+.box img {
+    width: 70%;
+    height: auto;
+     transition: 0.ss;
+     mix-blend-mode: lighten;     /* دي بتشيل اللون الاسود الغامق اللي بتبقى وراه الصورة */
+}
+
+.box:hover{
+    background: #ff4b2b;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(225, 75, 43, 0.4 ) ;
+    border-color: transparent;
+
+}
+.box:hover img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
