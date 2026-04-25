@@ -4,9 +4,32 @@
 <meta charset="UTF-8">
 <title>Contact</title>
 <link rel="stylesheet" href="contact.css">
+<link href="styleHome.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="menu" id="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    <nav id="nav-links" class="nav-links">
+        <a href="login.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+            <div id="cars-dropdown" class="dropdown-content">
+                <a href="#">BMW</a>
+                <a href="#">Mercedes</a>
+                <a href="#">Lamborghini</a>
+                <a href="#">Ferrari</a>
+            </div>
+        </div>
+        <a href="#">About</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+    </header>
 
 <!-- 🔥 Intro -->
 <section class="intro">
@@ -30,5 +53,6 @@
 </section>
 
 <script src="contact us.js"></script>
+<script src="scriptHome.js"></script>
 </body>
 </html>
