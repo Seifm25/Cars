@@ -5,9 +5,32 @@
 <title>Contact</title>
 <link href="globe.css" rel="stylesheet">
 <link rel="stylesheet" href="contact.css">
+<link href="styleHome.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="menu" id="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    <nav id="nav-links" class="nav-links">
+        <a href="login.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+            <div id="cars-dropdown" class="dropdown-content">
+                <a href="#">BMW</a>
+                <a href="#">Mercedes</a>
+                <a href="#">Lamborghini</a>
+                <a href="#">Ferrari</a>
+            </div>
+        </div>
+        <a href="#">About</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+    </header>
 
     <button id="theme-switch">
         <img src="imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
@@ -35,6 +58,10 @@
 </section>
 
 <script src="contact us.js"></script>
+<<<<<<< HEAD
 <script src="globe.js"></script>
+=======
+<script src="scriptHome.js"></script>
+>>>>>>> 65b6352ea597eba7d232a03af6480396f7dc12bf
 </body>
 </html>
