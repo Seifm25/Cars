@@ -101,6 +101,33 @@ body {
     font-size: 16px;
     border-left: 2px solid var(--homborder);
 }
+.qout{
+    top: 30%;
+    left: 5%;
+    position: absolute;
+    display: inline-block;
+    z-index: 20;
+}
+h2{
+    position: relative;
+    font-size: medium;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--text);
+    z-index: 10;
+}
+.subtext{
+    position: relative;
+    margin-left: 0;
+    margin-top: 130px;
+    z-index: 1;
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 400px;
+    
+}
 #video-background {
     position: fixed;
     top: 50%; 
@@ -191,7 +218,7 @@ footer {
 }
 h2 {
     position: absolute;
-    top: 20%; 
+    top: 15%; 
     left: 5%;  
     transform: translateY(-50%); 
     color: var(--log); 
