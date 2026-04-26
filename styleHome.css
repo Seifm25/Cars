@@ -1,25 +1,22 @@
-:root{
---body:black;
---barhom-back: white;
---nav-links-backhover: rgba(56, 3, 3, 0.753);
---homborder: rgba(255, 255, 255, 0.1);
---navshadow: rgba(0, 0, 0, 0.5);
---text:white;
---texthovernav-border-btn:#c13b3b;
---dropdown-contentbac: rgba(0, 0, 0, 0.2);
---login-btnhoverbac:  rgba(128, 0, 0, 0.603);
---log:white;
+:root {
+    --body: rgb(37, 0, 0);
+    --barhom-back: white;
+    --nav-links-backhover: rgba(0, 0, 0, 0.753);
+    --homborder: rgba(255, 255, 255, 0.1);
+    --navshadow: rgba(0, 0, 0, 0.5);
+    --text: white;
+    --texthovernav-border-btn: #c13b3b;
+    --dropdown-contentbac: rgba(0, 0, 0, 0.2);
+    --login-btnhoverbac: rgba(128, 0, 0, 0.603);
+    --log: white;
 }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column; 
-    position: relative;
     background-color: var(--body);
     overflow-x: hidden;
 }
-
 .menu {
     cursor: pointer;
     position: fixed;
@@ -102,44 +99,6 @@ body {
     font-size: 16px;
     border-left: 2px solid var(--homborder);
 }
-.qout{
-    top: 30%;
-    left: 5%;
-    position: absolute;
-    display: inline-block;
-    z-index: 20;
-}
-h2{
-    position: relative;
-    font-size: medium;
-    margin: 0;
-    letter-spacing: 2px;
-    font-weight: 800;
-    color: var(--text);
-    z-index: 10;
-}
-.subtext{
-    position: relative;
-    margin-left: 0;
-    margin-top: 130px;
-    z-index: 1;
-    font-size: 18px;
-    color: var(--text);
-    line-height: 1.6;
-    max-width: 400px;
-    
-}
-#video-background {
-    position: fixed;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg) scale(1.5);
-    width: 100vh; 
-    height: 100vw; 
-    object-fit: cover;
-    z-index: -1;
-    filter: brightness(40%); 
-}
 .top-right-auth {
     position: fixed;
     top: 40px;
@@ -172,173 +131,318 @@ h2{
         font-size: 12px;
     }
 }
-#video-background {
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    filter: blur(15px) brightness(0.6); 
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(5px);
+}
+
+.video-container::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.menu {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1022;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--barhom-back);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100vh;
+    background-color: var(--nav-links-backhover);
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 1020;
+    box-shadow: 10px 0 30px var(--navshadow);
+}
+
+.nav-links.active { left: 0; }
+
+
+.images-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr; 
+    grid-template-rows: auto auto;
+    gap: 40px 20px; 
+    padding: 60px 40px;
+    max-width: 1400px; 
+    margin: 0 auto; 
+    position: relative;
+    z-index: 1; 
+    perspective: 2000px;
+}
+
+/* --- توزيع الصور في الأركان --- */
+/* العمود الأول (يسار) */
+.image-box:nth-child(1) { grid-column: 1; grid-row: 1; }
+.image-box:nth-child(3) { grid-column: 1; grid-row: 2; }
+
+/* العمود الثالث (يمين) */
+.image-box:nth-child(2) { grid-column: 3; grid-row: 1; }
+.image-box:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+.image-box {
+    width: 100%;
+    transform-style: preserve-3d; 
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* تأثير الميلان (الشمال لبرة واليمين لجوا) */
+.image-box:nth-child(odd) {
+    transform: rotateY(25deg) rotateX(5deg);
+}
+.image-box:nth-child(even) {
+    transform: rotateY(-25deg) rotateX(5deg);
+}
+
+.image-box img {
+    width: 100%; 
+    height: 300px; /* طول مناسب لوضع صورتين فوق بعض */
+    object-fit: cover; 
+    border-radius: 20px; 
+    box-shadow: -15px 15px 40px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* تأثير الـ Hover */
+.image-box:hover {
+    transform: rotateY(0deg) rotateX(0deg) translateZ(50px);
+    z-index: 20;
+}
+
+/* --- تنسيق النص في المنتصف --- */
+.center-text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100vh; 
-    min-height: 100vw; 
-    object-fit: cover;
-    z-index: -1;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    filter: brightness(30%);
-    margin-top: -70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text);
+    z-index: 10;
+    width: 30%; /* مساحة النص بين الصور */
+    pointer-events: none; /* للسماح للماوس بالوصول للصور خلف النص */
 }
+
+.center-text-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--texthovernav-border-btn);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.center-text-overlay p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* استجابة الموبايل */
+@media (max-width: 768px) {
+    .images-container {
+        grid-template-columns: 1fr;
+        perspective: none;
+    }
+    .image-box:nth-child(n) {
+        grid-column: 1;
+        grid-row: auto;
+        transform: none !important;
+    }
+    .center-text-overlay {
+        position: relative;
+        top: 0; left: 0; transform: none;
+        width: 100%; margin-bottom: 30px;
+    }
+}
+/* --- تنسيق الفوتر --- */
 footer {
-    margin-top: 90vh;   
-    background-color: #1a1a1a;
-    color: var(--log);
-    padding: 80px 0;
+    background-color: rgba(15, 0, 0, 0.95); /* لون غامق جداً يميل للأسود */
+    padding: 60px 20px 20px;
+    margin-top: 100px; /* مسافة بين الصور والفوتر */
+    border-top: 1px solid var(--homborder);
+    position: relative;
+    z-index: 10;
     width: 100%;
 }
+
 .footer-links-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    color: var(--texthovernav-border-btn); /* اللون الأحمر الخاص بكِ */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .footer-column ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
-.footer-column h3 {
-    margin-bottom: 15px;
-    color: var(--log);
+
+.footer-column ul li {
+    margin-bottom: 12px;
 }
-.footer-column h3:hover {
-    color: var(--texthovernav-border-btn); 
-}
-.footer-column li:hover {
-    color: var(--texthovernav-border-btn);
-}
+
 .footer-column ul li a {
-    color: var(--log); 
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.footer-column ul li a:hover {
+    color: var(--texthovernav-border-btn);
+    opacity: 1;
+    padding-left: 5px; /* حركة بسيطة عند التمرير */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-bottom p {
+    color: var(--text);
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+/* استجابة الموبايل */
+@media (max-width: 768px) {
+    .footer-links-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-column ul li a:hover {
+        padding-left: 0;
+    }
+}
+/* حاوية الأيقونات */
+.icons-brands-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    padding: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+/* العنصر الواحد (اللوجو والاسم) */
+.brand-item {
+    text-align: center;
+    transition: 0.3s;
+}
+
+.brand-item a {
     text-decoration: none;
 }
-.footer-column ul li a:hover {
-    color: var(--texthovernav-border-btn); 
-}
-h2 {
-    position: absolute;
-    top: 15%; 
-    left: 5%;  
-    transform: translateY(-50%); 
-    color: var(--log); 
-    font-size: 2.2rem; 
-    line-height: 1.3; 
-    text-transform: capitalize; 
-    z-index: 5; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-}
-/* ---------------------------------------- */
-.icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    top: 590px;
-    position: relative;
-    bottom: auto;
-    width: 100%;
-}
-.box img{
-    width: 60%;
-    height: auto;
-    transition: all 0.4s ease;
-}
-.login{
-    display: inline-block;
-}
-.box{
-    width: 70px;
-    height: 70px;
-    border-radius: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* حركه مرنه */
-    transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    /* تأثير الزجاج الضباب */
-    position: relative;
+
+/* صندوق اللوجو الدائري */
+.brand-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* جعلها دائرية */
     overflow: hidden;
-     
-}
-/* هنا تكبر شوسه عشان صغيره */
-.Mercedes{
-    width: 100px;
-}
-.Audi{
-    width: 105px;
-}
-.porsche {
-    width: 100px;
-}
-.box img {
-    width: 70%;
-    height: auto;
-     transition: 0.5s;
-     mix-blend-mode: screen; 
-     background: transparent;    /* دي بتشيل اللون الاسود الغامق اللي بتبقى وراه الصورة */
+    border: 2px solid var(--homborder);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.box:hover {
-    transform: translateY(-10px) scale(1.05);
-    background: rgba(255, 0, 0, 0.2); /* خلفية حمراء خفيفة جداً */
-    border-color: rgba(255, 0, 0, 0.5);
-    /* تأثير الوهج (الشرارة) */
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), 
-                0 0 40px rgba(255, 0, 0, 0.4),
-                inset 0 0 15px rgba(255, 0, 0, 0.5);
+/* الصورة داخل الدائرة */
+.brand-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* لضمان عدم تمطط اللوجو */
+    transition: transform 0.4s;
 }
-.box:hover img {
-    filter:drop-shadow(0 0 5px red); /* اللوجو نفسه ينور أحمر */
-    /* transform: scale(1.2); */
-}
-.img{
-    border-radius: 50%;
-}
-/* تنسيقات الموبايل فقط */
-@media (max-width: 600px) {
-    .icons {
-        /* تقليل المسافات بين اللوجوهات عشان تكفي عرض الشاشة */
-        gap: 15px; 
-        bottom: 550px;
-        
-        /* التأكد إن الحاوية في النص بالظبط */
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-        padding: 0 10px;
-        z-index: 1000;
-      
-    }
-    .box {
-        /* تصغير حجم الدوائر شوية عشان متزنقش في بعض */
-        width: 55px;
-        height: 55px;
-    }
 
-    .Mercedes {
+/* اسم الماركة تحت اللوجو */
+.brand-item span {
+    display: block;
+    margin-top: 10px;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* تأثير عند تمرير الماوس */
+.brand-item:hover .brand-box {
+    border-color: var(--texthovernav-border-btn);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(193, 59, 59, 0.4); /* ضل بلونك الأحمر */
+}
+
+.brand-item:hover .brand-img {
+    transform: scale(1.1);
+}
+
+.brand-item:hover span {
+    color: var(--texthovernav-border-btn);
+    opacity: 1;
+}
+
+/* للموبايل */
+@media (max-width: 480px) {
+    .icons-brands-container {
+        gap: 15px;
+    }
+    .brand-box {
         width: 60px;
+        height: 60px;
     }
-    .Audi {
-        width: 65px;
-    }
-}
-
-
-
-
-
-.about-container h2,
-.about-container .section-text h2 {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    text-transform: none !important;
-    font-size: 2rem !important;
-    margin-bottom: 20px !important;
 }

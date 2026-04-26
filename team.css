@@ -1,0 +1,223 @@
+:root {
+    --primary-red: #ff3b3b;
+    --dark-surface: #1a1a1a;
+    --glass-bg: rgba(43, 43, 43, 0.85);
+    --text-main: #ffffff;
+    --text-dim: #b3b3b3;
+    --accent-blue: #40e0d0; 
+}
+
+body {
+    background: radial-gradient(circle at top left, #4a1d1d, #1a1a1a);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 40px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.card-header {
+    text-align: left;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-red);
+    padding-left: 20px;
+}
+
+.card-header h2 {
+    color: var(--text-main);
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.card-header p {
+    color: var(--text-dim);
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
+}
+
+.modern-table th {
+    color: var(--text-dim);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.modern-table tbody tr {
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.modern-table tbody tr:hover {
+    background: rgba(255, 59, 59, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modern-table td {
+    padding: 18px 20px;
+    color: var(--text-main);
+    font-size: 1rem;
+}
+
+.modern-table td:first-child {
+    border-radius: 12px 0 0 12px;
+    font-weight: 500;
+}
+
+.modern-table td:last-child {
+    border-radius: 0 12px 12px 0;
+    text-align: right;
+}
+
+
+.badge {
+    background: rgba(64, 224, 208, 0.1);
+    color: var(--accent-blue);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    border: 1px solid rgba(64, 224, 208, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    body {
+        padding: 1.5rem;
+    }
+    
+    .glass-card {
+        padding: 1.2rem;
+    }
+    
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modern-table th,
+    .modern-table td {
+        padding: 0.8rem 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .glass-card {
+        padding: 1rem;
+        border-radius: 1.5rem;
+    }
+    
+    .card-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .card-header p {
+        font-size: 0.85rem;
+    }
+    
+    .modern-table th,
+    .modern-table td {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .modern-table th,
+    .modern-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .modern-table th i {
+        margin-right: 4px;
+        font-size: 0.7rem;
+    }
+    
+    .badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .table-responsive {
+        border-radius: 0.5rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .table-responsive {
+        border-radius: 0.75rem;
+        border: 1px solid #e2e8f0;
+    }
+    
+    .modern-table {
+        min-width: 350px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .glass-card {
+        padding: 2rem;
+    }
+    
+    .card-header h2 {
+        font-size: 2rem;
+    }
+    
+    .modern-table th,
+    .modern-table td {
+        padding: 1.2rem 1.5rem;
+        font-size: 1.05rem;
+    }
+}
+
