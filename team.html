@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team</title>
+    <link rel="stylesheet" href="team.css">
+     <link href="styleHome.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="nav-links" class="nav-links">
+            <a href="login.html">Home</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                <div id="cars-dropdown" class="dropdown-content">
+                    <a href="#">BMW</a>
+                <a href="#">Mercedes</a>
+                <a href="#">Audi</a>
+                <a href="#">Porsche</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+   <div class="main-wrapper">
+    <div class="glass-card">
+        <div class="card-header">
+            <h2><span class="dot"></span> Student Team</h2>
+            <p>Academic Year 2025/2026</p>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-user"></i> NAME</th>
+                        <th><i class="fas fa-id-card"></i> ID NUMBER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Seif ELdin Nagy</td><td><span class="badge">20250486</span></td></tr>
+                    <tr><td>Malak Hashem Osman</td><td><span class="badge">20251086</span></td></tr>
+                    <tr><td>Moaz Ashraf</td><td><span class="badge">20251057</span></td></tr>
+                    <tr><td>Mai Said</td><td><span class="badge">20251114</span></td></tr>
+                    <tr><td>Mahmoud Ahmed</td><td><span class="badge">20250953</span></td></tr>
+                    <tr><td>Maryam Wael</td><td><span class="badge">20251024</span></td></tr>
+                    <tr><td>John Ayad</td><td><span class="badge">20250272</span></td></tr>
+                    <tr><td>Malak Hussein</td><td><span class="badge">20251074</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <script src="scriptHome.js"></script>
+    
+</body>
+</html>
