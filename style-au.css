@@ -203,17 +203,16 @@ body {
 
 .about-badge {
     display: inline-block;
-    background: rgb(255 4 42 / 15%);
-    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.658);
+    color: rgb(238, 101, 101);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 20px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgb(0 0 0);
+    border: 1px solid rgba(8, 7, 7, 0.412);
 }
-
 
 .about-badge i {
     margin-right: 8px;
@@ -304,8 +303,7 @@ body {
 .section-icon {
     font-size: 2rem;
     color: var(--accent-red);
-    margin-bottom: 10px; /* تأكد من وجود مسافة كافية تحت الأيقونة */
-    display: block; /* عشان تضمن إنها واخدة سطر لوحدها */
+    margin-bottom: 20px;
 }
 
 .section-text h2 {
@@ -313,8 +311,6 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     color: var(--text-white);
-    line-height: 1.2; /* ده هيمنع الحروف إنها تدخل في بعضها */
-    display: block;
 }
 
 .section-text p {
@@ -440,7 +436,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(15px); /* قلل المسافة من 30 لـ 15 */
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -452,8 +448,7 @@ body {
 @media (max-width: 992px) {
     .section {
         flex-direction: column;
-        gap: 40px; /* زود المسافة بين النص والصورة */
-        text-align: center; /* اختياري: بيخلي الشكل أشيك في الموبايل */
+        gap: 30px;
     }
     
     .section.reverse {
@@ -470,9 +465,6 @@ body {
     
     .section-image img {
         height: 280px;
-    }
-    .section-icon {
-        margin: 0 auto 15px; /* يوسطن الأيقونة ويظبط المسافة */
     }
 }
 

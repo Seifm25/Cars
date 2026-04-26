@@ -299,3 +299,18 @@ h2 {
         width: 65px;
     }
 }
+
+
+
+
+
+.about-container h2,
+.about-container .section-text h2 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    text-transform: none !important;
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+}
