@@ -19,7 +19,7 @@
 }
 
 
-body.dark-mode {
+/* body.dark-mode {
     --body-bg-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     --container-bg: #1e1e1e;
     --home-bg: #000000;
@@ -34,7 +34,7 @@ body.dark-mode {
     --text-muted: #aaaaaa;
     --section-bg: rgba(255, 255, 255, 0.03);
     --card-bg: rgba(255, 255, 255, 0.08);
-}
+} */
 
 * {
     margin: 0;
@@ -79,7 +79,7 @@ body {
 }
 
 
-.menu {
+/* .menu {
     cursor: pointer;
     position: fixed;
     top: 20px;
@@ -143,7 +143,7 @@ body {
     background-color: rgba(193, 61, 81, 0.15);
     padding-left: 40px; 
     color: var(--accent-red);
-}
+} */
 
 
 .dropdown {
@@ -203,16 +203,17 @@ body {
 
 .about-badge {
     display: inline-block;
-    background: rgba(193, 61, 81, 0.15);
-    color: var(--accent-red);
+    background: rgb(255 4 42 / 15%);
+    color: rgb(0, 0, 0);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 20px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(193, 61, 81, 0.3);
+    border: 1px solid rgb(0 0 0);
 }
+
 
 .about-badge i {
     margin-right: 8px;
@@ -303,7 +304,8 @@ body {
 .section-icon {
     font-size: 2rem;
     color: var(--accent-red);
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* تأكد من وجود مسافة كافية تحت الأيقونة */
+    display: block; /* عشان تضمن إنها واخدة سطر لوحدها */
 }
 
 .section-text h2 {
@@ -311,6 +313,8 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     color: var(--text-white);
+    line-height: 1.2; /* ده هيمنع الحروف إنها تدخل في بعضها */
+    display: block;
 }
 
 .section-text p {
@@ -436,7 +440,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(15px); /* قلل المسافة من 30 لـ 15 */
     }
     to {
         opacity: 1;
@@ -448,7 +452,8 @@ body {
 @media (max-width: 992px) {
     .section {
         flex-direction: column;
-        gap: 30px;
+        gap: 40px; /* زود المسافة بين النص والصورة */
+        text-align: center; /* اختياري: بيخلي الشكل أشيك في الموبايل */
     }
     
     .section.reverse {
@@ -465,6 +470,9 @@ body {
     
     .section-image img {
         height: 280px;
+    }
+    .section-icon {
+        margin: 0 auto 15px; /* يوسطن الأيقونة ويظبط المسافة */
     }
 }
 

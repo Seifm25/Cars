@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
@@ -7,35 +8,27 @@
     <link href="styleHome.css" rel="stylesheet">
 </head>
 <body>
-  <h2>Hello,<br>Welcome to our website</h2>
-    <button id="theme-switch">
-      <img
-        src="imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
-        class="dark-icon"
-        alt="darkMode"
-      />
-      <img
-        src="imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png"
-        class="light-icon"
-        alt="lightMode"
-      />
-    </button>
+
     <video id="video-background" autoplay muted loop>
-      <source src="videocarr.mp4" type="video/mp4" />
+        <source src="videocarr.mp4" type="video/mp4" />
     </video>
+
     <header>
-      <video id="video-background" autoplay muted loop>
-        <source src="videocarr.mp4" type="video/mp4">
-      </video>
+        <button id="theme-switch">
+            <img src="imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode" />
+            <img src="imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode" />
+        </button>
 
         <div class="top-right-auth">
             <a href="index.html" class="login-btn">Login</a>
         </div>
+
         <div class="menu" id="menu-icon" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
 
       <nav id="nav-links" class="nav-links">
         <a href="login.html">Home</a>
@@ -75,89 +68,109 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact us</a>
       </nav>
+      
+        <nav id="nav-links" class="nav-links">
+            <a href="login.html">Home</a>
+            
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                <div id="cars-dropdown" class="dropdown-content">
+                    <a href="#">BMW</a>
+                    <a href="#">Mercedes</a>
+                    <a href="#">Audi</a>
+                    <a href="#">Porsche</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
     </header>
-    <script src="scriptHome.js"></script>
+
+    <main>
+        <h2>Hello,<br>Welcome to our website</h2>
+
+        <div class="icons">
+            <div class="login">
+                <a href="#">
+                    <div class="box Audi">
+                        <img src="imgs/Audi4.jpeg" class="img" alt="Audi" />
+                    </div>
+                </a>
+            </div>
+            <div class="login">
+                <a href="#">
+                    <div class="box Mercedes">
+                        <img src="imgs/Mercedes.jpeg" class="img" alt="Mercedes" />
+                    </div>
+                </a>
+            </div>
+            <div class="login">
+                <a href="#">
+                    <div class="box porsche">
+                        <img src="imgs/porsche2.jpeg" class="img" alt="Porsche"/>
+                    </div>
+                </a>
+            </div>
+            <div class="login">
+                <a href="#">
+                    <div class="box">
+                        <img src="imgs/BMW.jpeg" class="img" alt="BMW"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
     <footer>
-    <div class="footer-links-container">
-        <div class="footer-column">
-            <h3>About us</h3>
-            <ul>
-                <li><a href="team.html" class="footer-link-text">Our team</a></li>
-                <li>Browse Inventory</li>
-                <li>Resources</li>
-                <li>Our story</li>
-                <li>Careers</li>
-            </ul>
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="team.html" class="footer-link-text">Our team</a></li>
+                    <li>Browse Inventory</li>
+                    <li>Resources</li>
+                    <li>Our story</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html" class="footer-link-text">Contact us</a></li>
+                    <li>FAQ</li>
+                    <li>Shipping info</li>
+                    <li>Returns</li>
+                    <li>Track order</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li>Privacy policy</li>
+                    <li>Terms of service</li>
+                    <li>Cookie policy</li>
+                    <li>Accessibility</li>
+                    <li>Offers</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul>
+                    <li>Follow on Instagram</li>
+                    <li>Follow on Facebook</li>
+                    <li>Follow on Twitter</li>
+                    <li>Follow on TikTok</li>
+                    <li>Subscribe</li>
+                </ul>
+            </div>
         </div>
+    </footer>
 
-        <div class="footer-column">
-            <h3>Support</h3>
-            <ul>
-                <li><a href="contact.html" class="footer-link-text">Contact us</a></li>
-                <li>FAQ</li>
-                <li>Shipping info</li>
-                <li>Returns</li>
-                <li>Track order</li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h3>Legal</h3>
-            <ul>
-                <li>Privacy policy</li>
-                <li>Terms of service</li>
-                <li>Cookie policy</li>
-                <li>Accessibility</li>
-                <li>Offers</li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h3>Connect</h3>
-            <ul>
-                <li>Follow on Instagram</li>
-                <li>Follow on Facebook</li>
-                <li>Follow on Twitter</li>
-                <li>Follow on TikTok</li>
-                <li>Subscribe</li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-    <!-- --------------------------------------------------------- -->
-    <div class="icons">
-      <div class="login">
-        <a href="#">
-          <div class="box Audi">
-            <img src="imgs/Audi4.jpeg" class="img"  alt="Audi" />
-          </div>
-        </a>
-      </div>
-      <div class="login">
-        <a href="#">
-          <div class="box Mercedes">
-
-            <img src="imgs/Mercedes.jpeg" class="img" alt="Mercedes" />
-          </div>
-        </a>
-      </div>
-      <div class="login">
-        <a href="#">
-          <div class="box">
-            <img src="imgs/porsche2.jpeg"class="img"alt="Porsche"/>
-          </div>
-        </a>
-      </div>
-
-      <div class="login">
-        <a href="#">
-          <div class="box">
-            <img src="imgs/BMW.jpeg" class="img"alt="BMW"/>
-          </div>
-        </a>
-      </div>
-    </div>
+    <script src="scriptHome.js"></script>
     <script src="globe.js"></script>
-  </body>
+</body>
 </html>
