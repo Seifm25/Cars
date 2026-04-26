@@ -17,6 +17,7 @@ body {
     flex-direction: column; 
     position: relative;
     background-color: var(--body);
+    overflow-x: hidden;
 }
 
 .menu {
