@@ -207,10 +207,10 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    bottom: 400px;
+    top: 590px;
     position: relative;
+    bottom: auto;
     width: 100%;
-    
 }
 .box img{
     width: 60%;
@@ -232,19 +232,24 @@ h2 {
     /* تأثير الزجاج الضباب */
     position: relative;
     overflow: hidden;
+     
 }
 /* هنا تكبر شوسه عشان صغيره */
 .Mercedes{
-    width: 80px;
+    width: 100px;
 }
-.audi{
-    width: 95px;
+.Audi{
+    width: 105px;
+}
+.porsche {
+    width: 100px;
 }
 .box img {
     width: 70%;
     height: auto;
-     transition: 0.ss;
-     mix-blend-mode: screen;     /* دي بتشيل اللون الاسود الغامق اللي بتبقى وراه الصورة */
+     transition: 0.5s;
+     mix-blend-mode: screen; 
+     background: transparent;    /* دي بتشيل اللون الاسود الغامق اللي بتبقى وراه الصورة */
 }
 
 .box:hover {
@@ -257,12 +262,11 @@ h2 {
                 inset 0 0 15px rgba(255, 0, 0, 0.5);
 }
 .box:hover img {
-    filter: brightness(1) drop-shadow(0 0 5px red); /* اللوجو نفسه ينور أحمر */
+    filter:drop-shadow(0 0 5px red); /* اللوجو نفسه ينور أحمر */
     /* transform: scale(1.2); */
 }
 .img{
     border-radius: 50%;
-     background: transparent !important;
 }
 /* تنسيقات الموبايل فقط */
 @media (max-width: 600px) {
