@@ -573,3 +573,34 @@ html {
         transform: none;
     }
 }
+
+
+
+
+
+
+
+/* حل مشكلة تداخل العناوين */
+.section-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 10px !important; /* دي هتضمن مسافة إجبارية بين الأيقونة والعنوان والباراجراف */
+}
+
+.section-icon, 
+.section-text h2, 
+.section-text p {
+    position: relative !important; /* بيلغي أي absolute ممكن يكون متسرب من ملف تاني */
+    top: auto !important;
+    left: auto !important;
+    margin: 0 !important; 
+    padding-bottom: 10px !important; /* مسافة تحت كل عنصر */
+    display: block !important;
+}
+
+.section-text h2 {
+    line-height: 1.4 !important;
+    margin-top: 5px !important;
+}
