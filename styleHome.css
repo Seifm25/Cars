@@ -1,7 +1,7 @@
 :root{
 --body:black;
 --barhom-back: white;
---nav-links-backhover: rgba(128, 0, 0, 0.15);
+--nav-links-backhover: rgba(56, 3, 3, 0.753);
 --homborder: rgba(255, 255, 255, 0.1);
 --navshadow: rgba(0, 0, 0, 0.5);
 --text:white;
@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1001;
+    z-index: 1022;
     transition: 0.3s;
 }
 
@@ -60,7 +60,7 @@ body {
     flex-direction: column;
     padding-top: 100px;
     transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 1000;
+    z-index: 1020;
     box-shadow: 10px 0 30px var(--navshadow);
 }
 
@@ -207,12 +207,10 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    bottom: 15px;
-    /* عشان يثبت الحاويه ف مكان معين */
-    position: fixed;
+    bottom: 400px;
+    position: relative;
     width: 100%;
-    z-index: 1000;
-    border: none;
+    
 }
 .box img{
     width: 60%;
@@ -264,14 +262,14 @@ h2 {
 }
 .img{
     border-radius: 50%;
-     background: transparent;
+     background: transparent !important;
 }
 /* تنسيقات الموبايل فقط */
 @media (max-width: 600px) {
     .icons {
         /* تقليل المسافات بين اللوجوهات عشان تكفي عرض الشاشة */
         gap: 15px; 
-        bottom: 20px;
+        bottom: 550px;
         
         /* التأكد إن الحاوية في النص بالظبط */
         left: 0;
@@ -279,6 +277,10 @@ h2 {
         display: flex;
         justify-content: center;
         width: 100%;
+        position: relative;
+        padding: 0 10px;
+        z-index: 1000;
+      
     }
 
     .box {
