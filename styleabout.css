@@ -204,7 +204,7 @@ body {
 .about-badge {
     display: inline-block;
     background: rgb(255 4 42 / 15%);
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
@@ -213,6 +213,7 @@ body {
     backdrop-filter: blur(5px);
     border: 1px solid rgb(0 0 0);
 }
+
 
 .about-badge i {
     margin-right: 8px;
