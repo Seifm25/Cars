@@ -278,15 +278,10 @@ body {
 
 .section {
     display: flex;
-    gap: 50px;
-    align-items: center;
-    margin-bottom: 80px;
-    animation: fadeInUp 0.8s ease-out backwards;
-    animation-delay: calc(var(--order, 0) * 0.1s);
-    background: var(--section-bg);
-    border-radius: 30px;
-    padding: 20px;
-    transition: background 0.3s ease;
+    align-items: center; /* بيخلي النص والصورة في محاذاة واحدة */
+    gap: 40px;
+    margin-bottom: 60px;
+    width: 100%;
 }
 
 .section:nth-child(4) { --order: 1; }
@@ -298,23 +293,23 @@ body {
 }
 
 .section-text {
-    flex: 1;
+    flex: 1; /* بياخد نص المساحة */
+    display: flex;
+    flex-direction: column; /* بيرتب العناصر تحت بعضها */
+    gap: 15px; /* بيعمل مسافة ثابتة ومحترمة بين الأيقونة والعنوان والباراجراف */
 }
 
 .section-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--accent-red);
-    margin-bottom: 10px; /* تأكد من وجود مسافة كافية تحت الأيقونة */
-    display: block; /* عشان تضمن إنها واخدة سطر لوحدها */
+    line-height: 1; /* مهم جداً عشان ميركبش فوق اللي تحته */
 }
 
 .section-text h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin: 0; /* بنصفر المارجن عشان بنعتمد على الـ gap بتاع الأب */
+    line-height: 1.2;
     color: var(--text-white);
-    line-height: 1.2; /* ده هيمنع الحروف إنها تدخل في بعضها */
-    display: block;
 }
 
 .section-text p {
@@ -574,33 +569,3 @@ html {
     }
 }
 
-
-
-
-
-
-
-/* حل مشكلة تداخل العناوين */
-.section-text {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    gap: 10px !important; /* دي هتضمن مسافة إجبارية بين الأيقونة والعنوان والباراجراف */
-}
-
-.section-icon, 
-.section-text h2, 
-.section-text p {
-    position: relative !important; /* بيلغي أي absolute ممكن يكون متسرب من ملف تاني */
-    top: auto !important;
-    left: auto !important;
-    margin: 0 !important; 
-    padding-bottom: 10px !important; /* مسافة تحت كل عنصر */
-    display: block !important;
-}
-
-.section-text h2 {
-    line-height: 1.4 !important;
-    margin-top: 5px !important;
-}
