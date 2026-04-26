@@ -294,6 +294,7 @@ footer {
     border-top: 1px solid var(--homborder);
     position: relative;
     z-index: 10;
+    width: 100%;
 }
 
 .footer-links-container {
