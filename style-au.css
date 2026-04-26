@@ -203,17 +203,16 @@ body {
 
 .about-badge {
     display: inline-block;
-    background: rgb(255 4 42 / 15%);
-    color: rgb(0, 0, 0);
+    background: rgba(193, 61, 81, 0.15);
+    color: var(--accent-red);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 20px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgb(0 0 0);
+    border: 1px solid rgba(193, 61, 81, 0.3);
 }
-
 
 .about-badge i {
     margin-right: 8px;
@@ -278,10 +277,15 @@ body {
 
 .section {
     display: flex;
-    align-items: center; /* بيخلي النص والصورة في محاذاة واحدة */
-    gap: 40px;
-    margin-bottom: 60px;
-    width: 100%;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 80px;
+    animation: fadeInUp 0.8s ease-out backwards;
+    animation-delay: calc(var(--order, 0) * 0.1s);
+    background: var(--section-bg);
+    border-radius: 30px;
+    padding: 20px;
+    transition: background 0.3s ease;
 }
 
 .section:nth-child(4) { --order: 1; }
@@ -293,22 +297,19 @@ body {
 }
 
 .section-text {
-    flex: 1; /* بياخد نص المساحة */
-    display: flex;
-    flex-direction: column; /* بيرتب العناصر تحت بعضها */
-    gap: 15px; /* بيعمل مسافة ثابتة ومحترمة بين الأيقونة والعنوان والباراجراف */
+    flex: 1;
 }
 
 .section-icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--accent-red);
-    line-height: 1; /* مهم جداً عشان ميركبش فوق اللي تحته */
+    margin-bottom: 20px;
 }
 
 .section-text h2 {
-    font-size: 2.2rem;
-    margin: 0; /* بنصفر المارجن عشان بنعتمد على الـ gap بتاع الأب */
-    line-height: 1.2;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
     color: var(--text-white);
 }
 
@@ -435,7 +436,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(15px); /* قلل المسافة من 30 لـ 15 */
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -447,8 +448,7 @@ body {
 @media (max-width: 992px) {
     .section {
         flex-direction: column;
-        gap: 40px; /* زود المسافة بين النص والصورة */
-        text-align: center; /* اختياري: بيخلي الشكل أشيك في الموبايل */
+        gap: 30px;
     }
     
     .section.reverse {
@@ -465,9 +465,6 @@ body {
     
     .section-image img {
         height: 280px;
-    }
-    .section-icon {
-        margin: 0 auto 15px; /* يوسطن الأيقونة ويظبط المسافة */
     }
 }
 
@@ -568,4 +565,3 @@ html {
         transform: none;
     }
 }
-
