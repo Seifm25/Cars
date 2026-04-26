@@ -53,6 +53,8 @@ body.lightMode .dark-icon{
     display: block;
     filter: invert(1);
 }
+
+/*  */
 body.lightMode {
     /* Navbar & Global - light */
     --barhom-back: rgba(255, 255, 255, 0.8);
@@ -86,6 +88,7 @@ body.lightMode {
     --formshad: rgba(255, 255, 255, 0.05);
     --forshad: rgba(255, 255, 255, 0.08); 
 }
+/*  */
 
 .contact-container {
     display: flex;
