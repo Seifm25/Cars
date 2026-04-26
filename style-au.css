@@ -204,7 +204,7 @@ body {
 .about-badge {
     display: inline-block;
     background: rgba(0, 0, 0, 0.658);
-    color: black;
+    color: rgb(238, 101, 101);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
