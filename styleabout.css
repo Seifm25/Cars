@@ -204,14 +204,15 @@ body {
 .about-badge {
     display: inline-block;
     background: rgba(193, 61, 81, 0.15);
-    color: var(--accent-red);
+    color: var(--text-black);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 20px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(193, 61, 81, 0.3);
+    border: 1px solid rgba(17, 4, 6, 0.585);
+    /* border: 1px solid rgba(193, 61, 81, 0.3); */
 }
 
 .about-badge i {
