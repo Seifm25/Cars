@@ -203,15 +203,15 @@ body {
 
 .about-badge {
     display: inline-block;
-    background: rgba(193, 61, 81, 0.15);
-    color: var(--accent-red);
+    background: rgba(0, 0, 0, 0.658);
+    color: black;
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 20px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(193, 61, 81, 0.3);
+    border: 1px solid rgba(8, 7, 7, 0.412);
 }
 
 .about-badge i {
