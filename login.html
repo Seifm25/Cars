@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
     <link href="globe.css" rel="stylesheet">
     <link href="styleHome.css" rel="stylesheet">
 </head>
+
 <body>
 
     <video id="video-background" autoplay muted loop>
@@ -16,7 +18,8 @@
     <header>
         <button id="theme-switch">
             <img src="imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode" />
-            <img src="imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode" />
+            <img src="imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon"
+                alt="lightMode" />
         </button>
 
         <div class="top-right-auth">
@@ -71,7 +74,7 @@
       
         <nav id="nav-links" class="nav-links">
             <a href="login.html">Home</a>
-            
+
             <div class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
                 <div id="cars-dropdown" class="dropdown-content">
@@ -88,8 +91,12 @@
     </header>
 
     <main>
-        <h2>Hello,<br>Welcome to our website</h2>
+        <div class="qout">
+            <h2>Experience<br> Luxury & Performance</h2>
+            <p class="subtext">"Explore the latest car models, detailed specifications, and up-to-date market prices all
+                in one place"</p>
 
+        </div>
         <div class="icons">
             <div class="login">
                 <a href="#">
@@ -109,13 +116,15 @@
                 <a href="#">
                     <div class="box porsche">
                         <img src="imgs/porsche2.jpeg" class="img" alt="Porsche"/>
+                    <div class="box">
+                        <img src="imgs/porsche2.jpeg" class="img" alt="Porsche" />
                     </div>
                 </a>
             </div>
             <div class="login">
                 <a href="#">
                     <div class="box">
-                        <img src="imgs/BMW.jpeg" class="img" alt="BMW"/>
+                        <img src="imgs/BMW.jpeg" class="img" alt="BMW" />
                     </div>
                 </a>
             </div>
@@ -160,11 +169,11 @@
             <div class="footer-column">
                 <h3>Connect</h3>
                 <ul>
-                    <li>Follow on Instagram</li>
-                    <li>Follow on Facebook</li>
-                    <li>Follow on Twitter</li>
-                    <li>Follow on TikTok</li>
-                    <li>Subscribe</li>
+                    <li> <a href="https://www.instagram.com/">Follow on Instagram</a></li>
+                    <li> <a href="https://www.facebook.com/">Follow on Facebook</a></li>
+                    <li> <a href="https://twitter.com/">Follow on Twitter</a></li>
+                    <li> <a href="https://www.tiktok.com/">Follow on TikTok</a></li>
+                    <li> <a href="https://www.youtube.com/">Subscribe</a></li>
                 </ul>
             </div>
         </div>
@@ -173,4 +182,5 @@
     <script src="scriptHome.js"></script>
     <script src="globe.js"></script>
 </body>
+
 </html>
