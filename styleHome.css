@@ -12,6 +12,10 @@
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
     background-color: var(--body);
 }
 
@@ -106,7 +110,7 @@ body {
     height: 100vw; 
     object-fit: cover;
     z-index: -1;
-    filter: brightness(30%); 
+    filter: brightness(40%); 
 }
 .top-right-auth {
     position: fixed;
@@ -140,7 +144,64 @@ body {
         font-size: 12px;
     }
 }
-/* ------------------------------------------- */
+#video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vh; 
+    min-height: 100vw; 
+    object-fit: cover;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    filter: brightness(30%);
+    margin-top: -70px;
+}
+footer {
+    margin-top: 90vh;   
+    background-color: #1a1a1a;
+    color: var(--log);
+    padding: 80px 0;
+    width: 100%;
+}
+.footer-links-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-column ul {
+    list-style: none; 
+    padding: 0;
+}
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: var(--log);
+}
+.footer-column h3:hover {
+    color: var(--texthovernav-border-btn); 
+}
+.footer-column li:hover {
+    color: var(--texthovernav-border-btn);
+}
+.footer-column ul li a {
+    color: var(--log); 
+    text-decoration: none;
+}
+.footer-column ul li a:hover {
+    color: var(--texthovernav-border-btn); 
+}
+h2 {
+    position: absolute;
+    top: 20%; 
+    left: 5%;  
+    transform: translateY(-50%); 
+    color: var(--log); 
+    font-size: 2.2rem; 
+    line-height: 1.3; 
+    text-transform: capitalize; 
+    z-index: 5; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+/* ---------------------------------------- */
 .icons{
     display: flex;
     justify-content: center;
