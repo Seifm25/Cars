@@ -274,16 +274,21 @@ body {
     .images-container {
         grid-template-columns: 1fr;
         perspective: none;
+        padding-bottom: 0;
     }
     .image-box:nth-child(n) {
         grid-column: 1;
         grid-row: auto;
-        transform: none !important;
+       
     }
     .center-text-overlay {
         position: relative;
-        top: 0; left: 0; transform: none;
-        width: 100%; margin-bottom: 30px;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%; 
+        margin-bottom: 5px;
+        margin-top: 100px;
     }
 }
 /* --- تنسيق الفوتر --- */
@@ -358,10 +363,18 @@ footer {
 /* استجابة الموبايل */
 @media (max-width: 768px) {
     .footer-links-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
     }
-    
+    .footer-column {
+        /* تحديد عرض العمود ليكون تقريباً نصف العرض لظهور اثنين بجانب بعض */
+        flex: 0 0 calc(50% - 20px); 
+        min-width: 140px; /* تقليل الحد الأدنى للعرض ليسمح بوجود اثنين */
+        text-align: center;
+        margin-bottom: 20px;
+    }
     .footer-column ul li a:hover {
         padding-left: 0;
     }
