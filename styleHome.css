@@ -279,7 +279,7 @@ body {
     .image-box:nth-child(n) {
         grid-column: 1;
         grid-row: auto;
-        transform: none !important;
+       
     }
     .center-text-overlay {
         position: relative;
