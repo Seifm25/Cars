@@ -9,8 +9,14 @@
     --dropdown-contentbac: rgba(0, 0, 0, 0.2);
     --login-btnhoverbac: rgba(128, 0, 0, 0.603);
     --log: white;
+	--bg-videobac: rgba(0, 0, 0, 0.6);
+	--video-containerbac: rgba(0, 0, 0, 0.5);
+	--image-boxshad: rgba(0, 0, 0, 0.7);
+	--image-boxbord: rgba(255, 255, 255, 0.1);
+	--center-text-overlayshad: rgba(0, 0, 0, 0.9);
+	--footerbac: rgba(15, 0, 0, 0.95);
+	--brand-itemhovshad: rgba(193, 59, 59, 0.4);
 }
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -141,7 +147,7 @@ body {
     object-fit: cover;
     filter: blur(15px) brightness(0.6); 
     transform: scale(1.1);
-    background: rgba(0, 0, 0, 0.6); 
+    background:var(--bg-videobac); 
     backdrop-filter: blur(5px);
 }
 
@@ -152,7 +158,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background:var(--video-containerbac);
     z-index: -1;
 }
 .menu {
@@ -231,8 +237,8 @@ body {
     height: 300px; /* طول مناسب لوضع صورتين فوق بعض */
     object-fit: cover; 
     border-radius: 20px; 
-    box-shadow: -15px 15px 40px rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -15px 15px 40px var(--image-boxshad);
+    border: 1px solid var(--image-boxshad);
 }
 
 /* تأثير الـ Hover */
@@ -258,7 +264,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     color: var(--texthovernav-border-btn);
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 20px var(rgba(0, 0, 0, 0.9));
     margin: 0;
     text-transform: uppercase;
 }
@@ -293,7 +299,7 @@ body {
 }
 /* --- تنسيق الفوتر --- */
 footer {
-    background-color: rgba(15, 0, 0, 0.95); /* لون غامق جداً يميل للأسود */
+    background-color: var(--footerbac); /* لون غامق جداً يميل للأسود */
     padding: 60px 20px 20px;
     margin-top: 100px; /* مسافة بين الصور والفوتر */
     border-top: 1px solid var(--homborder);
@@ -351,7 +357,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--image-boxshad);
 }
 
 .footer-bottom p {
@@ -407,10 +413,10 @@ footer {
     border-radius: 50%; /* جعلها دائرية */
     overflow: hidden;
     border: 2px solid var(--homborder);
-    background: rgba(255, 255, 255, 0.1);
+    background:var(--image-boxshad);
     backdrop-filter: blur(5px);
     transition: all 0.4s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px var(--center-text-overlayshad);
 }
 
 /* الصورة داخل الدائرة */
@@ -437,7 +443,7 @@ footer {
 .brand-item:hover .brand-box {
     border-color: var(--texthovernav-border-btn);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(193, 59, 59, 0.4); /* ضل بلونك الأحمر */
+    box-shadow: 0 10px 20px var(--brand-itemhovshad); /* ضل بلونك الأحمر */
 }
 
 .brand-item:hover .brand-img {

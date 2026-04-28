@@ -1,12 +1,22 @@
 :root {
+    --body: rgb(37, 0, 0);
     --barhom-back: white;
-    --nav-links-backhover: rgba(128, 0, 0, 0.15);
+    --nav-links-backhover: rgba(0, 0, 0, 0.753);
     --homborder: rgba(255, 255, 255, 0.1);
     --navshadow: rgba(0, 0, 0, 0.5);
     --text: white;
     --texthovernav-border-btn: #c13b3b;
     --dropdown-contentbac: rgba(0, 0, 0, 0.2);
     --login-btnhoverbac: rgba(128, 0, 0, 0.603);
+    --log: white;
+	--bg-videobac: rgba(0, 0, 0, 0.6);
+	--video-containerbac: rgba(0, 0, 0, 0.5);
+	--image-boxshad: rgba(0, 0, 0, 0.7);
+	--image-boxshad: rgba(255, 255, 255, 0.1);
+	--center-text-overlayshad: rgba(0, 0, 0, 0.9);
+	--footerbac: rgba(15, 0, 0, 0.95);
+	--brand-itemhovshad: rgba(193, 59, 59, 0.4);
+
 
     --bodybac: #c9d6ff;
     --bodbac1: #646062;
@@ -28,6 +38,22 @@
     --formshad: rgba(255, 255, 255, 0.05);
     --inpBtn-hov: white;
     --forshad: rgba(255, 255, 255, 0.08);
+
+    --body-bg-gradient: linear-gradient(to right, #646062, #c16e68);
+    --container-bg: #393434;
+    --home-bg: #000000;
+    --nav-bg: rgba(128, 0, 0, 0.15);
+    --input-bg: #ffeeee;
+    --button-bg: #ffeeee;
+    --accent-red: #c13d51;
+    --accent-gradient: linear-gradient(to right, #8d2a39, #ff0000);
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --text-ghost: ghostwhite;
+    --text-muted: #333333;
+    --section-bg: transparent;
+    --card-bg: rgba(255, 255, 255, 0.05);
+
 }
 #theme-switch{
     background: transparent;
