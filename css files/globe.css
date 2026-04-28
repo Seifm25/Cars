@@ -9,13 +9,13 @@
     --dropdown-contentbac: rgba(0, 0, 0, 0.2);
     --login-btnhoverbac: rgba(128, 0, 0, 0.603);
     --log: white;
-	--bg-videobac: rgba(0, 0, 0, 0.6);
-	--video-containerbac: rgba(0, 0, 0, 0.5);
-	--image-boxshad: rgba(0, 0, 0, 0.7);
-	--image-boxshad: rgba(255, 255, 255, 0.1);
-	--center-text-overlayshad: rgba(0, 0, 0, 0.9);
-	--footerbac: rgba(15, 0, 0, 0.95);
-	--brand-itemhovshad: rgba(193, 59, 59, 0.4);
+    --bg-videobac: rgba(0, 0, 0, 0.6);
+    --video-containerbac: rgba(0, 0, 0, 0.5);
+    --image-boxshad: rgba(0, 0, 0, 0.7);
+    --image-boxshad: rgba(255, 255, 255, 0.1);
+    --center-text-overlayshad: rgba(0, 0, 0, 0.9);
+    --footerbac: rgba(15, 0, 0, 0.95);
+    --brand-itemhovshad: rgba(193, 59, 59, 0.4);
 
 
     --bodybac: #c9d6ff;
@@ -55,7 +55,8 @@
     --card-bg: rgba(255, 255, 255, 0.05);
 
 }
-#theme-switch{
+
+#theme-switch {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -65,63 +66,89 @@
     left: 70px;
     z-index: 1000;
 }
-#theme-switch img{
+
+#theme-switch img {
     position: fixed;
     width: 30px;
     height: auto;
     transition: 0.3s;
 
 }
-.light-icon{
-    display: block; 
+
+.light-icon {
+    display: block;
     visibility: visible;
     position: fixed;
     opacity: 1;
 }
-.dark-icon{
+
+.dark-icon {
     display: none;
     visibility: visible;
     position: fixed;
     opacity: 1;
 
 }
-body.lightMode .light-icon{
+
+body.lightMode .light-icon {
     display: none;
 }
-body.lightMode .dark-icon{
+
+body.lightMode .dark-icon {
     display: block;
     filter: invert(1);
 }
+
 body.lightMode {
-    /* Navbar & Global - light */
-    --barhom-back: rgba(255, 255, 255, 0.8);
-    --text: red; 
-    --navshadow: rgba(255, 255, 255, 0.774);
-    --dropdown-contentbac: rgba(255, 255, 255, 0.1);
+    /*home body&nav style in light mode*/
+    --text: black;
+    --navshadow: rgba(0, 0, 0, 0.2);
+    --nav-links-backhover:#c13b3b9a;
+    --drobdown-contenbac: rgba(255, 255, 255, 0.2);
+    --log: var(--text-black);
+    --image-boxshad: rgba(0, 0, 0, 0.9);
+    --barhom-back: rgba(0, 0, 0, 0.8);
+}
 
-    /* Home Page - light */
-    --bodybac: #1a1a1a;
-    --containerbac: #2d2d2d;
-    --cont-a: #eee;
-    --contbtnbac: #444;
-    --contform: #2d2d2d;
-    --tog-bac: #e74c3c;
+/* filter on video  */
 
-    --bodybac: #ffffff; 
-    --containerbac: #f9f9f9; 
-    --cont-a: #333;
-    --contbtnbac: #eee;
-    --contform: #ffffff;
-    --tog-bac: #ff4d6d;
+/* red with white filter  */
+/* body.lightMode #bg-video {
+    filter: blur(15px) brightness(1.2) sepia(0.2);
+}
+body.lightMode .video-container::after {
+    background: rgba(255, 255, 255, 0.4);
+} */
 
-    /* Login & Contact - light */
+/* white and grey video  */
+body.lightMode #bg-video{
+filter: blur(15px) brightness(1.7) grayscale(1);
+transition: filter 0.5s ease;
+}
 
-    --contactbac:rgba(255, 255, 255, 0.9); 
+body.lightMode .video-container::after {
+    /* زودنا الشفافية شوية عشان تبيض الخلفية أكتر */
+    background: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+    transition: background 0.5s ease;
+}
+
+/* Navbar & Global - light */
+body.lightMode .nav-links a:hover {
+    color:white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+/*about page*/
+
+
+
+/* Login & Contact - light */
+
+/* --contactbac:rgba(255, 255, 255, 0.9); 
     --form:rgba(0, 0, 0, 0.03);
     --formshad:rgba(0, 0, 0, 0.1);
     --forshad:rgba(0, 0, 0, 0.05);
     --contactbac: rgba(0, 0, 0, 0.85); 
     --form: rgba(255, 255, 255, 0.06);
     --formshad: rgba(255, 255, 255, 0.05);
-    --forshad: rgba(255, 255, 255, 0.08); 
-}
+    --forshad: rgba(255, 255, 255, 0.08);  */
