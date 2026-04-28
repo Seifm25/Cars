@@ -1,160 +1,206 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css files/globe.css" />
+    <link rel="stylesheet" href="../css files/style.css" />
+    <title>Login Page</title>
+    <link href="../css files/styleHome.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="../css files/globe.css" />
-  <link rel="stylesheet" href="../css files/style.css" />
-  <title>Login Page</title>
-  <link href="../css files/styleHome.css" rel="stylesheet" />
-</head>
+  <body>
+    <button id="theme-switch">
+      <img
+        src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
+        class="dark-icon"
+        alt="darkMode"
+      />
+      <img
+        src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png"
+        class="light-icon"
+        alt="lightMode"
+      />
+    </button>
+    <header>
+      <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
 
-<body>
-  <button id="theme-switch">
-    <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode" />
-    <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode" />
-  </button>
-  <header>
-    <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
+      <nav id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+          <a
+            href="javascript:void(0)"
+            class="dropbtn"
+            onclick="toggleCars(event)"
+            >Cars ▾</a
+          >
+          <div id="cars-dropdown" class="dropdown-content">
+            <a href="#">BMW</a>
+            <a href="#">Mercedes</a>
+            <a href="#">Audi</a>
+            <a href="#">Porsche</a>
+          </div>
+        </div>
+        <a href="../html files/about.html">About</a>
+                <a href="../html files/contact.html">Contact us</a>
+      </nav>
+    </header>
 
-    <nav id="nav-links" class="nav-links">
-      <a href="../html files/index.html">Home</a>
-      <div class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
-        <div id="cars-dropdown" class="dropdown-content">
-          <a href="#">BMW</a>
-          <a href="#">Mercedes</a>
-          <a href="#">Audi</a>
-          <a href="#">Porsche</a>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form >
+          <h1>Create Account</h1>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.google.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://github.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <span><b>or use your email for registration</b></span>
+          <input type="text" placeholder="Name" name="username" />
+          <input type="email" placeholder="Email" name="email" />
+
+          <div class="password-field">
+            <input
+              type="password"
+              placeholder="Password"
+              name="pass"
+              id="signup-pass"
+            />
+            <i
+              class="fa-solid fa-eye toggle-password"
+              onclick="togglePassVisibility('signup-pass', this)"
+            ></i>
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form >
+      </div>
+
+      <div class="form-container sign-in">
+        <form >
+          <h1>Sign In</h1>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.google.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://github.com/" class="icon" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <span><b>or use your email password</b></span>
+          <input type="email" placeholder="Email" name="em" />
+
+          <div class="password-field">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="signin-pass"
+            />
+            <i
+              class="fa-solid fa-eye toggle-password"
+              onclick="togglePassVisibility('signin-pass', this)"
+            ></i>
+          </div>
+
+          <a href="#">Forget Your Password?</a>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of site features</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello, Friend!</h1>
+            <p>
+              Register with your personal details to use all of site features
+            </p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
         </div>
       </div>
-      <a href="../html files/about.html">About</a>
-      <a href="../html files/contact.html">Contact us</a>
-    </nav>
-  </header>
-
-  <div class="container" id="container">
-    <div class="form-container sign-up">
-      <form>
-        <h1>Create Account</h1>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/" class="icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.google.com/" class="icon" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
-          <a href="https://www.instagram.com/" class="icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://github.com/" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <span><b>or use your email for registration</b></span>
-        <input type="text" placeholder="Name" name="username" />
-        <input type="email" placeholder="Email" name="email" />
-
-        <div class="password-field">
-          <input type="password" placeholder="Password" name="pass" id="signup-pass" />
-          <i class="fa-solid fa-eye toggle-password" onclick="togglePassVisibility('signup-pass', this)"></i>
-        </div>
-
-        <button type="submit">Sign Up</button>
-      </form>
     </div>
-
-    <div class="form-container sign-in">
-      <form>
-        <h1>Sign In</h1>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/" class="icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.google.com/" class="icon" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
-          <a href="https://www.instagram.com/" class="icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://github.com/" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <span><b>or use your email password</b></span>
-        <input type="email" placeholder="Email" name="em" />
-
-        <div class="password-field">
-          <input type="password" placeholder="Password" name="password" id="signin-pass" />
-          <i class="fa-solid fa-eye toggle-password" onclick="togglePassVisibility('signin-pass', this)"></i>
-        </div>
-
-        <a href="#">Forget Your Password?</a>
-        <button type="submit">Sign In</button>
-      </form>
-    </div>
-
-    <div class="toggle-container">
-      <div class="toggle">
-        <div class="toggle-panel toggle-left">
-          <h1>Welcome Back!</h1>
-          <p>Enter your personal details to use all of site features</p>
-          <button class="hidden" id="login">Sign In</button>
-        </div>
-        <div class="toggle-panel toggle-right">
-          <h1>Hello, Friend!</h1>
-          <p>
-            Register with your personal details to use all of site features
-          </p>
-          <button class="hidden" id="register">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
+<footer>
     <div class="footer-links-container">
-      <div class="footer-column">
-        <h3>About us</h3>
-        <ul>
-          <li><a href="../html files/team.html">Our team</a></li>
-          <li><a href="#">Browse Inventory</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Our story</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
+        <div class="footer-column">
+            <h3>About us</h3>
+            <ul>
+                <li><a href="../html files/team.html">Our team</a></li>
+                <li><a href="#">Browse Inventory</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Our story</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
 
-      <div class="footer-column">
-        <h3>Support</h3>
-        <ul>
-          <li><a href="../html files/contact.html">Contact us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Shipping info</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Track order</a></li>
-        </ul>
-      </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="../html files/contact.html">Contact us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping info</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Track order</a></li>
+            </ul>
+        </div>
 
-      <div class="footer-column">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms of service</a></li>
-          <li><a href="#">Cookie policy</a></li>
-          <li><a href="#">Accessibility</a></li>
-          <li><a href="#">Offers</a></li>
-        </ul>
-      </div>
+        <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Cookie policy</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+        </div>
 
-      <div class="footer-column">
-        <h3>Connect</h3>
-        <ul>
-          <li><a href="https://www.instagram.com/">Follow on Instagram</a></li>
-          <li><a href="https://www.facebook.com/">Follow on Facebook</a></li>
-          <li><a href="https://twitter.com/">Follow on Twitter</a></li>
-          <li><a href="https://www.tiktok.com/">Follow on TikTok</a></li>
-          <li><a href="https://www.youtube.com/">Subscribe</a></li>
-        </ul>
-      </div>
+        <div class="footer-column">
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/">Follow on Instagram</a></li>
+                <li><a href="https://www.facebook.com/">Follow on Facebook</a></li>
+                <li><a href="https://twitter.com/">Follow on Twitter</a></li>
+                <li><a href="https://www.tiktok.com/">Follow on TikTok</a></li>
+                <li><a href="https://www.youtube.com/">Subscribe</a></li>
+            </ul>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
+        <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
     </div>
-  </footer>
-  <script src="../js file/script.js"></script>
+</footer>
+    <script src="../js file/script.js"></script>
 
-  <script src="../js file/globe.js"></script>
-  <script src="../js file/scriptHome.js"></script>
-</body>
-
+    <script src="../js file/globe.js"></script>
+    <script src="../js file/scriptHome.js"></script>
+  </body>
 </html>
