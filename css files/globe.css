@@ -66,6 +66,7 @@
     z-index: 1000;
 }
 #theme-switch img{
+    position: fixed;
     width: 30px;
     height: auto;
     transition: 0.3s;
@@ -94,17 +95,17 @@ body.lightMode .dark-icon{
 body.lightMode {
     /* Navbar & Global - light */
     --barhom-back: rgba(255, 255, 255, 0.8);
-    --text: black; 
+    --text: red; 
     --navshadow: rgba(255, 255, 255, 0.774);
     --dropdown-contentbac: rgba(255, 255, 255, 0.1);
 
     /* Home Page - light */
-    /* --bodybac: #1a1a1a;
+    --bodybac: #1a1a1a;
     --containerbac: #2d2d2d;
     --cont-a: #eee;
     --contbtnbac: #444;
     --contform: #2d2d2d;
-    --tog-bac: #e74c3c; */
+    --tog-bac: #e74c3c;
 
     --bodybac: #ffffff; 
     --containerbac: #f9f9f9; 

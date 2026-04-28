@@ -38,7 +38,7 @@ header {
 }
 
 
-#theme-switch {
+/* #theme-switch {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -92,8 +92,9 @@ body.lightMode {
     --contactbac: rgba(255, 255, 255, 0.9);
     --form: rgba(0, 0, 0, 0.03);
     --formshad: rgba(0, 0, 0, 0.1);
-    --forshad: rgba(0, 0, 0, 0.05);
-}
+    --forshad: rgba(0, 0, 0, 0.05); 
+}*/
+
 
 .contact-container {
     display: flex;
