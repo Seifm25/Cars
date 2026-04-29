@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 30%, rgba(255, 0, 0, 0.2) 100%), 
-                url("imges/mercedes1.jpeg");
+                url("../imges/mercedes1.jpeg");
     background-size: cover;
     background-position: center;
     color: white;
