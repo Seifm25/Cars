@@ -145,7 +145,6 @@ body.lightMode .video-container::after {
 body.lightMode .nav-links a:hover {
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    background-color: #f67b7b94;
 }
 
 /* Contact - lightmode */
