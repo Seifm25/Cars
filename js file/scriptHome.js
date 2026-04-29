@@ -1,9 +1,11 @@
 function toggleMenu() {
     const nav = document.getElementById('nav-links');
     const menuIcon = document.getElementById('menu-icon');
+     const footer = document.querySelector('footer');
     
     nav.classList.toggle('active');
     menuIcon.classList.toggle('open');
+     footer.classList.toggle('footer-shift');
 }
 
 function toggleCars(event) {
