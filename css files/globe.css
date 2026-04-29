@@ -155,7 +155,7 @@ body.lightMode:has(.contact-container) {
     background-position: center;
     direction: ltr;
     filter: none;
-    color: #fff;
+    color: black;
 }
 
 body.lightMode .contact-info h1,
