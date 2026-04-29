@@ -103,11 +103,17 @@ body.lightMode {
     /*home body&nav style in light mode*/
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
-    --nav-links-backhover:#c13b3b9a;
+    --nav-links-backhover:#590202d4;
     --drobdown-contenbac: rgba(255, 255, 255, 0.2);
     --log: var(--text-black);
     --image-boxshad: rgba(0, 0, 0, 0.9);
     --barhom-back: rgba(0, 0, 0, 0.8);
+}
+body.lightMode footer{
+    background-color:#590202d4;
+}
+body.lightMode footer h3 {
+    color: #5f0000 ; 
 }
 
 /* filter on video  */
@@ -121,9 +127,9 @@ body.lightMode .video-container::after {
 } */
 
 /* white and grey video  */
-body.lightMode #bg-video{
-filter: blur(15px) brightness(1.7) grayscale(1);
-transition: filter 0.5s ease;
+body.lightMode #bg-video {
+    filter: blur(15px) brightness(1.7) grayscale(1);
+    transition: filter 0.5s ease;
 }
 
 body.lightMode .video-container::after {
@@ -135,14 +141,61 @@ body.lightMode .video-container::after {
 
 /* Navbar & Global - light */
 body.lightMode .nav-links a:hover {
-    color:white;
+    color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
-/*about page*/
+
+/* Contact - lightmode */
+/* body.lightMode.contact-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 100%),
+        url("../imges/mercedes1.jpeg") !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+} */
+body.lightMode:has(.contact-container) {
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 100%),
+        url("../imges/mercedes1.jpeg"); */
+    background: linear-gradient(rgb(237 234 234 / 79%), rgb(255 255 255 / 79%)),
+        url("../imges/mercedes1.jpeg");
+    filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+    direction: ltr;
+    filter: none;
+    color: black;
+}
+
+body.lightMode .contact-info h1,
+body.lightMode .contact-info p {
+    color: black;
+    text-shadow: none;
+}
+
+body.lightMode .contact-form-container {
+    background: rgba(43, 26, 26, 0.897);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+}
+
+body.lightMode .input-group label {
+    color: #000000;
+}
+
+body.lightMode .input-wrapper input,
+body.lightMode textarea {
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+
+.input-wrapper input:focus,
+textarea:focus {
+    border-color: #ff0000;
+}
 
 
 
-/* Login & Contact - light */
 
 /* --contactbac:rgba(255, 255, 255, 0.9); 
     --form:rgba(0, 0, 0, 0.03);
