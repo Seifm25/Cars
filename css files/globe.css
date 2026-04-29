@@ -245,6 +245,10 @@ body.lightMode .container input:focus {
 body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
+body.lightMode .social-icons a:hover {
+    color: #992219 !important;
+    animation: bounce 0.5s infinite alternate;
+}
 
 /*goz2 el red elly beytharak kol shewaya */
 body.lightMode .toggle {
