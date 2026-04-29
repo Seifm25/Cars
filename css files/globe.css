@@ -143,8 +143,9 @@ body.lightMode .video-container::after {
 
 /* Navbar & Global - light */
 body.lightMode .nav-links a:hover {
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    background-color: rgba(153, 34, 25, 0.1) !important; 
+    color: white ; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);    
 }
 
 /* Contact - lightmode */
@@ -276,7 +277,6 @@ body.lightMode .custom-list li {
 }
 body.lightMode .social-icons a {
     background: white !important;
-    color: #c13b3b !important;
     border: 1px solid #c13b3b !important;
 }
 /*ABOUT US tkon a8m3 */
