@@ -366,10 +366,15 @@ footer {
     opacity: 0.5;
 }
 .footer-shift {
-    transform: translateX(260px); 
+    /* إلغي الـ transform القديم خالص */
+    transform: none !important; 
+    
+    /* استخدمي الـ margin عشان يزق الفوتر وهو لازق في الناف بار */
+    margin-left: 260px; 
     width: calc(100% - 260px) !important;
+    
+    transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
-
 /* استجابة الموبايل */
 @media (max-width: 768px) {
     .footer-links-container {
