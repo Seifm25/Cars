@@ -365,6 +365,10 @@ footer {
     font-size: 0.8rem;
     opacity: 0.5;
 }
+.footer-shift {
+    transform: translateX(260px); 
+    width: calc(100% - 260px) !important;
+}
 
 /* استجابة الموبايل */
 @media (max-width: 768px) {

@@ -103,15 +103,15 @@ body.lightMode {
     /*home body&nav style in light mode*/
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
-    --nav-links-backhover: #590202d4;
+    --nav-links-backhover:#4d3b3bd4;
     --drobdown-contenbac: rgba(255, 255, 255, 0.2);
     --log: var(--text-black);
     --image-boxshad: rgba(0, 0, 0, 0.9);
     --barhom-back: rgba(0, 0, 0, 0.8);
 }
 
-body.lightMode footer {
-    background-color: #590202d4;
+body.lightMode footer{
+    background-color:#4d3b3bd4;
 }
 
 body.lightMode footer h3 {
@@ -153,8 +153,7 @@ body.lightMode .nav-links a:hover {
 body.lightMode:has(.contact-container) {
     /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 100%),
         url("../imges/mercedes1.jpeg"); */
-    background: linear-gradient(rgb(237 234 234 / 79%), rgb(255 255 255 / 79%)),
-        url("../imges/mercedes1.jpeg");
+    background: linear-gradient(rgb(237 234 234 / 79%), rgb(239 8 8 / 79%)), url(../imges/mercedes1.jpeg);
     filter: blur(8px);
     background-size: cover;
     background-position: center;
