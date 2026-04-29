@@ -26,8 +26,13 @@ function toggleCars(event) {
 document.addEventListener('click', function(event) {
     const nav = document.getElementById('nav-links');
     const menuIcon = document.getElementById('menu-icon');
+    const footer = document.querySelector('footer');
     if (!nav.contains(event.target) && !menuIcon.contains(event.target)) {
+         if (nav.classList.contains('active')) {
         nav.classList.remove('active');
         menuIcon.classList.remove('open');
+        footer.classList.remove('footer-shift');
+        }
     }
+
 });
