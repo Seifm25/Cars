@@ -82,9 +82,10 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: var(--nav-links-backhover);
+    background-color: #f67b7b94;
     padding-left: 40px; 
-    color: var(--texthovernav-border-btn);
+    color: #fff
+	;
 }
 .dropdown-content {
     max-height: 0;
