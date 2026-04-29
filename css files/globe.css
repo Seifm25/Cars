@@ -103,17 +103,19 @@ body.lightMode {
     /*home body&nav style in light mode*/
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
-    --nav-links-backhover:#4d3b3bd4;
+    --nav-links-backhover: #4d3b3bd4;
     --drobdown-contenbac: rgba(255, 255, 255, 0.2);
     --log: var(--text-black);
     --image-boxshad: rgba(0, 0, 0, 0.9);
     --barhom-back: rgba(0, 0, 0, 0.8);
 }
-body.lightMode footer{
-    background-color:#4d3b3bd4;
+
+body.lightMode footer {
+    background-color: #4d3b3bd4;
 }
+
 body.lightMode footer h3 {
-    color: #5f0000 ; 
+    color: #5f0000;
 }
 
 /* filter on video  */
@@ -146,15 +148,7 @@ body.lightMode .nav-links a:hover {
 }
 
 /* Contact - lightmode */
-/* body.lightMode.contact-container {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 100%),
-        url("../imges/mercedes1.jpeg") !important;
-    background-size: cover !important;
-    background-attachment: fixed;
-} */
 body.lightMode:has(.contact-container) {
-    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 100%),
-        url("../imges/mercedes1.jpeg"); */
     background: linear-gradient(rgb(237 234 234 / 79%), rgb(239 8 8 / 79%)), url(../imges/mercedes1.jpeg);
     filter: blur(8px);
     background-size: cover;
@@ -193,14 +187,107 @@ textarea:focus {
     border-color: #ff0000;
 }
 
+/* LogIn page lightMode */
+body.lightMode:has(#container) {
+    background: linear-gradient(to left, #992219, white) !important;
+}
+
+body.lightMode .container {
+    background-color: white !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.lightMode .container form {
+    background-color: white !important;
+}
+
+body.lightMode .container h1,
+body.lightMode .container span,
+body.lightMode .container b,
+body.lightMode .container p {
+    color: #000000 !important;
+}
+
+body.lightMode .container a {
+    color: black !important;
+}
+
+body.lightMode .container a:hover {
+    color: #992219 !important;
+}
+
+/*lma ndos 3la el ay input w nekteb*/
+body.lightMode .container input {
+    background-color: #f4f4f4 !important;
+    color: #000000 !important;
+    border: 1px solid #ddd !important;
+}
+
+body.lightMode .container input:focus {
+    border-color: #992219 !important;
+    background-color: #ffffff !important;
+}
 
 
+body.lightMode .social-icons a {
+    border-color: #992219 !important;
+}
 
-/* --contactbac:rgba(255, 255, 255, 0.9); 
-    --form:rgba(0, 0, 0, 0.03);
-    --formshad:rgba(0, 0, 0, 0.1);
-    --forshad:rgba(0, 0, 0, 0.05);
-    --contactbac: rgba(0, 0, 0, 0.85); 
-    --form: rgba(255, 255, 255, 0.06);
-    --formshad: rgba(255, 255, 255, 0.05);
-    --forshad: rgba(255, 255, 255, 0.08);  */
+/*goz2 el red elly beytharak kol shewaya */
+body.lightMode .toggle {
+    background: linear-gradient(to right, #c13b3b, #8d2a39) !important;
+}
+
+/* background: #992219; */
+/*el text elly maktob gowah */
+body.lightMode .toggle-panel {
+    color: white !important;
+}
+
+body.lightMode .toggle-panel h1,
+body.lightMode .toggle-panel p {
+    color: white !important;
+}
+
+body.lightMode .container button.hidden {
+    border-color: white !important;
+    color: white !important;
+}
+
+/* about page lightmode*/
+body.lightMode:has(.about-container) {
+    background: linear-gradient(to left, #992219, white) !important;
+    color: #000000 !important;
+}
+
+/*el words el red zay ma heya*/
+body.lightMode .accent-red,
+body.lightMode .section-icon i,
+body.lightMode .custom-list li i,
+body.lightMode .trust-badge {
+    color: #c13b3b !important;
+}
+/*white words to black words */
+body.lightMode p, 
+body.lightMode .tagline, 
+body.lightMode .section-text h2, 
+body.lightMode .custom-list li {
+    color: #000000 !important;
+}
+body.lightMode .social-icons a {
+    background: white !important;
+    color: #c13b3b !important;
+    border: 1px solid #c13b3b !important;
+}
+/*ABOUT US tkon a8m3 */
+body.lightMode:has(.about-container) .about-header-section h1 {
+    /* background: #9b261e4f !important; */
+
+}
+/* gomlet scince 2014*/
+body.lightMode:has(.about-container) .about-badge{
+    background: #9b261e4f !important;
+    color: #000000 !important;
+    border:1px solid rgba(218, 85, 85, 0.412);
+
+}
