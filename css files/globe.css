@@ -103,14 +103,14 @@ body.lightMode {
     /*home body&nav style in light mode*/
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
-    --nav-links-backhover:#590202d4;
+    --nav-links-backhover:#4d3b3bd4;
     --drobdown-contenbac: rgba(255, 255, 255, 0.2);
     --log: var(--text-black);
     --image-boxshad: rgba(0, 0, 0, 0.9);
     --barhom-back: rgba(0, 0, 0, 0.8);
 }
 body.lightMode footer{
-    background-color:#590202d4;
+    background-color:#4d3b3bd4;
 }
 body.lightMode footer h3 {
     color: #5f0000 ; 
