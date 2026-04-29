@@ -10,8 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 30%, rgba(255, 0, 0, 0.2) 100%), 
-                url("../imges/mercedes1.jpeg");
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
     background-size: cover;
     background-position: center;
     color: white;
@@ -38,62 +37,7 @@ header {
 }
 
 
-/* #theme-switch {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    top: 25px;
-    left: 70px;
-    z-index: 1001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#theme-switch img {
-    width: 25px;
-    height: 25px;
-    transition: 0.3s;
-}
-
-.light-icon {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-}
-
-.dark-icon {
-    display: none;
-    visibility: visible;
-    opacity: 1;
-}
-
-body.lightMode .light-icon {
-    display: none;
-}
-
-body.lightMode .dark-icon {
-    display: block;
-    filter: invert(1);
-}
-
-body.lightMode {
-    --barhom-back: rgba(255, 255, 255, 0.8);
-    --text: black;
-    --navshadow: rgba(255, 255, 255, 0.774);
-    --dropdown-contentbac: rgba(255, 255, 255, 0.1);
-    --bodybac: #ffffff;
-    --containerbac: #f9f9f9;
-    --cont-a: #333;
-    --contbtnbac: #eee;
-    --contform: #ffffff;
-    --tog-bac: #ff4d6d;
-    --contactbac: rgba(255, 255, 255, 0.9);
-    --form: rgba(0, 0, 0, 0.03);
-    --formshad: rgba(0, 0, 0, 0.1);
-    --forshad: rgba(0, 0, 0, 0.05); 
-}*/
 
 
 .contact-container {
@@ -142,11 +86,12 @@ body.lightMode {
 
 .contact-form-container {
     flex: 1;
-    background: rgba(10, 10, 10, 0.8);
-    padding: 30px;
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                url("../imges/mercedes1.jpeg");    padding: 30px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .input-group {
