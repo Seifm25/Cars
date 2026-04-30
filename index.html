@@ -14,11 +14,28 @@
     </video>
 </div>
     <header>
+        <!-- ---------------------------------------------------------------------------------- -->
+         <div class="search-box">
+  <img src="C:\Users\HP\Documents\maisearch\ss.jpeg" id="searchBtn" onclick="openSearch()" alt="Search">
+  
+  <input type="search" id="searchInput" onkeyup="filterList()" placeholder="search.." style="display: none;">
+  
+  <ul id="resultsList">
+    <li><a href="#">BMW</a> </li>
+    <li><a href="#">Mercedes</a> </li>
+    <li><a href="#">Audi</a> </li>
+    <li><a href="#">Porsche</a> </li>
+  </ul>
+</div>
+<script src="search.js"></script>
+<!-- --------------------------------------------------------------------------------------------------- -->
+        
         <button id="theme-switch">
         <img src="imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
         <img src="imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode">
     </button>
     <div class="top-right-auth">
+
             <a href="html files/login.html" class="login-btn">Login</a>
         </div>
         <div class="menu" id="menu-icon" onclick="toggleMenu()">
