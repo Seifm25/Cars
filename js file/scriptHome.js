@@ -36,3 +36,35 @@ document.addEventListener('click', function(event) {
     }
 
 });
+// ----------------------------------------------------------------------------
+function openSearch() {
+  const btn = document.getElementById("searchBtn");
+  const input = document.getElementById("searchInput");
+
+  btn.style.display = "none";     // يخفي الصورة
+  input.style.display = "block";  // يظهر مربع الكتابة
+  input.focus();                  // يخلي الماوس جاهز للكتابة
+}
+
+function filterList() {
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toLowerCase();
+  const ul = document.getElementById("resultsList");
+  const li = ul.getElementsByTagName("li");
+
+  // تظهر القائمة فقط لو في كلام مكتوب
+  ul.style.display = input.value.length > 0 ? "block" : "none";
+
+  for (let i = 0; i < li.length; i++) {
+    let a =li[i].getElementsByTagName("a")[0];
+    
+    if (a){
+      let text = a.textContent || a.innerText;
+    if (text.toLowerCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+    }
+  }
+}
