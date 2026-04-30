@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #19100e, #ef5454);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh; /* يغطي طول الشاشة بالكامل */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* لمنع ظهور أي زوائد للفيديو */
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* لجعل الفيديو خلف المحتوى */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* أهم خاصية لضبط أبعاد الفيديو */
+}
+
+/* طبقة تعتيم خفيفة لضمان قراءة النص */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* لون أسود شفاف بنسبة 40% */
+    z-index: 0;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* ليكون فوق الفيديو والطبقة الشفافة */
+}
+
+.content h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+

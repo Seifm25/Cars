@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M5</title>
+    <link rel="stylesheet" href="m5.css">
+        <link rel="stylesheet" href="../css files/globe.css">
+    <link href="../css files/styleHome.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="hero">
+    <!-- الفيديو الخلفية -->
+    <video autoplay muted loop playsinline poster="fallback-image.jpg" class="back-video">
+        <source src="../vedio/ved.mp4" type="video/mp4">
+    </video>
+
+    <!-- طبقة شفافة لجعل النص واضحًا -->
+    <div class="overlay"></div>
+
+    <!-- محتوى الهيدر (النصوص) -->
+    <div class="content">
+        <h1>Bmw</h1>
+        
+    </div>
+    <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+          <a
+            href="javascript:void(0)"
+            class="dropbtn"
+            onclick="toggleCars(event)"
+            >Cars ▾</a
+          >
+          <div id="cars-dropdown" class="dropdown-content">
+            <a href="bmw.html">BMW</a>
+            <a href="mercedes.html">Mercedes</a>
+            <a href="audi.html">Audi</a>
+            <a href="porsche.html">Porsche</a>
+          </div>
+        </div>
+        <a href="../html files/about.html">About</a>
+                <a href="../html files/contact.html">Contact us</a>
+      </nav>
+</header>
+
+    
+</body>
+</html>
