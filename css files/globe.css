@@ -245,9 +245,11 @@ body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
 body.lightMode .social-icons a:hover {
+
     color: white !important;
     background:#992219 !important;
     background-color: #992219 !important;
+
 }
 
 /*goz2 el red elly beytharak kol shewaya */
