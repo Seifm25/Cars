@@ -103,15 +103,15 @@ body.lightMode {
     /*home body&nav style in light mode*/
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
-    --nav-links-backhover:#4d3b3bd4;
+    --nav-links-backhover: #4d3b3bd4;
     --drobdown-contenbac: rgba(255, 255, 255, 0.2);
     --log: var(--text-black);
     --image-boxshad: rgba(0, 0, 0, 0.9);
     --barhom-back: rgba(0, 0, 0, 0.8);
 }
 
-body.lightMode footer{
-    background-color:#4d3b3bd4;
+body.lightMode footer {
+    background-color: #4d3b3bd4;
 }
 
 body.lightMode footer h3 {
@@ -143,16 +143,13 @@ body.lightMode .video-container::after {
 
 /* Navbar & Global - light */
 body.lightMode .nav-links a:hover {
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    background-color: rgba(153, 34, 25, 0.1) !important; 
+    color: white ; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);    
 }
 
 /* Contact - lightmode */
-
-
 body.lightMode:has(.contact-container) {
-    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 100%),
-        url("../imges/mercedes1.jpeg"); */
     background: linear-gradient(rgb(237 234 234 / 79%), rgb(239 8 8 / 79%)), url(../imges/mercedes1.jpeg);
     filter: blur(8px);
     background-size: cover;
@@ -161,14 +158,6 @@ body.lightMode:has(.contact-container) {
     filter: none;
     color: black;
 }
-
-/* OR  */
-/* body.lightMode.contact-container {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 100%),
-        url("../imges/mercedes1.jpeg") !important;
-    background-size: cover !important;
-    background-attachment: fixed;
-} */
 
 body.lightMode .contact-info h1,
 body.lightMode .contact-info p {
@@ -264,4 +253,41 @@ body.lightMode .toggle-panel p {
 body.lightMode .container button.hidden {
     border-color: white !important;
     color: white !important;
+}
+
+/* about page lightmode*/
+body.lightMode:has(.about-container) {
+    background: linear-gradient(to left, #992219, white) !important;
+    color: #000000 !important;
+}
+
+/*el words el red zay ma heya*/
+body.lightMode .accent-red,
+body.lightMode .section-icon i,
+body.lightMode .custom-list li i,
+body.lightMode .trust-badge {
+    color: #c13b3b !important;
+}
+/*white words to black words */
+body.lightMode p, 
+body.lightMode .tagline, 
+body.lightMode .section-text h2, 
+body.lightMode .custom-list li {
+    color: #000000 !important;
+}
+body.lightMode .social-icons a {
+    background: white !important;
+    border: 1px solid #c13b3b !important;
+}
+/*ABOUT US tkon a8m3 */
+body.lightMode:has(.about-container) .about-header-section h1 {
+    /* background: #9b261e4f !important; */
+
+}
+/* gomlet scince 2014*/
+body.lightMode:has(.about-container) .about-badge{
+    background: #9b261e4f !important;
+    color: #000000 !important;
+    border:1px solid rgba(218, 85, 85, 0.412);
+
 }
