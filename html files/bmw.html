@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="../css files/globe.css">
+    <link rel="stylesheet" href="../css files/style-bmw.css">
+    <link rel="stylesheet" href="../css files/styleHome.css">
+</head>
+<body>
+    <button id="theme-switch">
+        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
+        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode">
+    </button>
+    <header>
+        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="nav-links" class="nav-links">
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                <div id="cars-dropdown" class="dropdown-content">
+                    <a href="bmw.html">BMW</a>
+                    <a href="mercedes.html">Mercedes</a>
+                    <a href="audi.html">Audi</a>
+                    <a href="porsche.html">Porsche</a>
+                </div>
+            </div>
+            <a href="../html files/about.html">About</a>
+            <a href="../html files/contact.html">Contact us</a>
+        </nav>
+    </header>
+    <div class="bmw-container">
+        <h1>BMW</h1>
+        <p>BMW, or Bayerische Motoren Werke AG, is a German multinational company that produces luxury vehicles and motorcycles. Founded in 1916, BMW has a long history of engineering excellence and innovation. The brand is known for its performance-oriented cars, which combine luxury with sporty driving dynamics. BMW's lineup includes a wide range of models, from compact sedans to high-performance sports cars and SUVs. With a focus on quality, technology, and driving pleasure, BMW has established itself as one of the leading luxury car manufacturers in the world.</p>
+        <img src="../imgs/bmw.jpg" alt="BMW Car">
+    </div>
+    
+    
+</body>
+</html>
