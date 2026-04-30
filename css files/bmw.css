@@ -10,43 +10,28 @@ body{
 
 .hero {
     width: 100%;
-    height: 100vh; /* يغطي طول الشاشة بالكامل */
+    height: 100vh; 
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* لمنع ظهور أي زوائد للفيديو */
+    overflow: hidden;
+    background-color: #000; /* عشان لو الفيديو اتأخر متبانش الخلفية الحمراء */
 }
 
 .back-video {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* لجعل الفيديو خلف المحتوى */
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* أهم خاصية لضبط أبعاد الفيديو */
-}
-
-/* طبقة تعتيم خفيفة لضمان قراءة النص */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* لون أسود شفاف بنسبة 40% */
-    z-index: 0;
+    top: 0;   /* أضفنا دي */
+    left: 0;  /* أضفنا دي */
+    width: 100vw; /* استخدم vw لضمان عرض الشاشة بالكامل */
+    height: 100vh; /* استخدم vh لضمان طول الشاشة بالكامل */
+    object-fit: cover;
+    z-index: -1; 
 }
 
 .content {
     text-align: center;
     color: #fff;
-    z-index: 1; /* ليكون فوق الفيديو والطبقة الشفافة */
+    z-index: 10; /* رفعنا الرقم عشان يظهر فوق أي حاجة */
+    pointer-events: none; /* عشان لو ضغطت ميعلقش مع الفيديو */
 }
-
-.content h1 {
-    font-size: 80px;
-    font-weight: 600;
-}
-
