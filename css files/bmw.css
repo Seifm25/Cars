@@ -31,19 +31,54 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.container {
-    background-color: var(--containerbac);
-    border-radius: 30px;
-    box-shadow: 0 5px 15px var(--contshadow);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+.specials {
+    padding: 80px 10%;
 }
-.container p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 20px 0;
+
+.specials h2 {
+    margin-bottom: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background: #111;
+    padding: 20px;
+    border: 1px solid #222;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.car-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.price {
+    color: #f39c12; /* لون ذهبي بسيط للسعر */
+}
+
+/* Footer & Form */
+footer {
+    padding: 80px 10%;
+    background: #050505;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
