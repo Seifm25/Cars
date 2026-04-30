@@ -68,3 +68,20 @@ function filterList() {
     }
   }
 }
+// أضيفي هذا الكود في آخر الملف
+document.addEventListener('click', function(event) {
+    const btn = document.getElementById("searchBtn");
+    const input = document.getElementById("searchInput");
+    const ul = document.getElementById("resultsList");
+
+    // التحقق: هل النقرة خارج الزرار وخارج مربع البحث وخارج القائمة؟
+    if (!btn.contains(event.target) && !input.contains(event.target) && !ul.contains(event.target)) {
+        
+        btn.style.display = "block";    // إظهار أيقونة البحث مرة أخرى
+        input.style.display = "none";   // إخفاء مربع البحث
+        ul.style.display = "none";      // إخفاء قائمة النتائج
+        
+        input.value = ""; // اختياري: مسح الكلام المكتوب عند الإغلاق
+    }
+});
+ 
