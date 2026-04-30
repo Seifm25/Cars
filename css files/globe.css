@@ -233,7 +233,7 @@ body.lightMode .container input:focus {
 body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
-<<<<<<< HEAD
+
 body.lightMode .social-icons a:hover {
 
     color: white !important;
@@ -241,8 +241,7 @@ body.lightMode .social-icons a:hover {
     background-color: #992219 !important;
 
 }
-=======
->>>>>>> 7a65be48d6b571eb6bc98d0db9fae45cd887da5f
+
 
 /*goz2 el red elly beytharak kol shewaya */
 body.lightMode .toggle {
