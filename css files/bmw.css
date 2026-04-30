@@ -1,3 +1,22 @@
+:root{
+--bodybac: #c9d6ff;
+--bodbac1: #343434;
+--bodbac2:  #992219;
+--containerbac: #393434;
+--contshadow: rgba(0, 0, 0, 0.35);
+--cont-a: #333;
+--contbtnbac:#ffeeee;
+--conthi-in-social-h1-span-tog: #fff;
+--contform: #393434;
+--socailtex :#ff9;
+--tog-bac: #c13d51;
+--sochov:#ff0000;
+--form : #F44336; 
+--tex:black;
+--tog1: #8d2a39;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
