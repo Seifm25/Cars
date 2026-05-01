@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #19100e, #ef5454);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000; /* عشان لو الفيديو اتأخر متبانش الخلفية الحمراء */
+}
+
+.back-video {
+    position: absolute;
+    top: 0;   /* أضفنا دي */
+    left: 0;  /* أضفنا دي */
+    width: 100vw; /* استخدم vw لضمان عرض الشاشة بالكامل */
+    height: 100vh; /* استخدم vh لضمان طول الشاشة بالكامل */
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    z-index: 10; /* رفعنا الرقم عشان يظهر فوق أي حاجة */
+    pointer-events: none; /* عشان لو ضغطت ميعلقش مع الفيديو */
+}
