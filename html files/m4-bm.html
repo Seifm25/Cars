@@ -9,51 +9,28 @@
     <link href="../css files/m4-bm.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<header class="welcome-section">
-    <h1>An M4 knows no limit.</h1>
-    <div class="glow-line"></div>
-
-     <div class="search-box">
-  <img src="../imgs/xx.png" id="searchBtn" onclick="openSearch()" alt="Search">
-  
-  <input type="search" id="searchInput" onkeyup="filterList()" placeholder="search.." style="display: none;">
-  
-  <ul id="resultsList">
-    <li><a href="../html files/bmw.html">BMW</a> </li>
-    <li><a href="../html files/mercedes.html">Mercedes</a> </li>
-    <li><a href="../html files/audi.html">Audi</a> </li>
-    <li><a href="../html files/porche.html">Porsche</a> </li>
-  </ul>
-</div>
-<script src="../js file/search.js"></script>
-<!-- --------------------------------------------------------------------------------------------------- -->
-        
-        <button id="theme-switch">
-        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
-        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode">
-    </button>
-    
-        <div class="menu" id="menu-icon" onclick="toggleMenu()">
+<header>
+        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
 
-    <nav id="nav-links" class="nav-links">
-        <a href="index.html">Home</a>
-        <div class="dropdown"> 
-        <a href="javascript:void(0)"class="dropbtn"onclick="toggleCars(event)">Cars ▾</a>
-        <div id="cars-dropdown" class="dropdown-content">
-            <a href="../html files/bmw.html">BMW</a>
-            <a href="../html files/mercedes.html">Mercedes</a>
-            <a href="../html files/audi.html">Audi</a>
-            <a href="../html files/porche.html">Porsche</a>
-        </div>
-        </div>
-        <a href="../html files/about.html">About</a>
-        <a href="../html files/contact.html">Contact us</a>
-    </nav>
-</header>
+        <nav id="nav-links" class="nav-links">
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                <div id="cars-dropdown" class="dropdown-content">
+                    <a href="bmw.html">BMW</a>
+                    <a href="mercedes.html">Mercedes</a>
+                    <a href="audi.html">Audi</a>
+                    <a href="porsche.html">Porsche</a>
+                </div>
+            </div>
+            <a href="../html files/about.html">About</a>
+            <a href="../html files/contact.html">Contact us</a>
+        </nav>
+    </header>
 
 <body>
     
