@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="../css files/globe.css">
     <link rel="stylesheet" href="../css files/style2.css">
     <link href="../css files/styleHome.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
+    
     <button id="theme-switch">
         <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
         <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode">
     </button>
+
     <header>
+         <!-- ---------------------------------------------------------------------------------- -->
+         <div class="search-box">
+  <img src="../imgs/xx.png" id="searchBtn" onclick="openSearch()" alt="Search" class="special-img">
+  
+  <input type="search" id="searchInput" onkeyup="filterList()" placeholder="search.." style="display: none;">
+  
+  <ul id="resultsList">
+    <li><a href="html files/bmw.html">BMW</a> </li>
+    <li><a href="html files/mercedes.html">Mercedes</a> </li>
+    <li><a href="html files/audi.html">Audi</a> </li>
+    <li><a href="html files/porche.html">Porsche</a> </li>
+  </ul>
+</div>
+<script src="search.js"></script>
+<!-- --------------------------------------------------------------------------------------------------- -->
+       
         <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -37,7 +55,7 @@
             <a href="../html files/contact.html">Contact us</a>
         </nav>
     </header>
-
+    
     <div class="contact-container">
         <div class="contact-info">
             <span class="badge">Contact us</span>
@@ -139,8 +157,6 @@
     </footer>
     <script src="../js file/globe.js"></script>
     <script src="../js file/scriptHome.js"></script>
-
-
 </body>
 
 </html>
