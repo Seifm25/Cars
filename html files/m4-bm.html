@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,152 +8,168 @@
     <link href="../css files/styleHome.css" rel="stylesheet">
     <link rel="stylesheet" href="../css files/globe.css">
     <link href="../css files/m4-bm.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
 </head>
 <header class="welcome-section">
     <h1>An M4 knows no limit.</h1>
     <div class="glow-line"></div>
 
-        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+    <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
 
-        <nav id="nav-links" class="nav-links">
-            <a href="../index.html">Home</a>
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
-                <div id="cars-dropdown" class="dropdown-content">
-                    <a href="../html files/bmw.html">BMW</a>
-                    <a href="../html files/mercedes.html">Mercedes</a>
-                    <a href="../html files/audi.html">Audi</a>
-                    <a href="../html files/porche.html">Porsche</a>
-                </div>
+    <nav id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+            <div id="cars-dropdown" class="dropdown-content">
+                <a href="../html files/bmw.html">BMW</a>
+                <a href="../html files/mercedes.html">Mercedes</a>
+                <a href="../html files/audi.html">Audi</a>
+                <a href="../html files/porche.html">Porsche</a>
             </div>
-            <a href="../html files/about.html">About</a>
-            <a href="../html files/contact.html">Contact us</a>
-        </nav>
-    </header>
+        </div>
+        <a href="../html files/about.html">About</a>
+        <a href="../html files/contact.html">Contact us</a>
+    </nav>
+</header>
 
 <body>
-    
+    <button id="theme-switch">
+        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
+        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode">
+    </button>
+
     <div class="present">
-    <main class="carView">
-<div class="imgcon">
-    <img src="../imgs/m4-bm.png" alt="BMW" class="car">
-    <svg class="lines"></svg>
+        <main class="carView">
+            <div class="imgcon">
+                <img src="../imgs/m4-bm.png" alt="BMW" class="car">
+                <svg class="lines"></svg>
 
-    <div class="hotspot" id="Astounding" style="top: 40%; left: 33%;">
-        <div class="dot"></div>
-        <div class="cl lineleft-h"></div>
-        <div class="ms left-card">
-                <h3>Astounding performance.</h3>
-                <p>Born for the racetrack, the Limited Edition BMW M4 CSL has achieved the fastest Nürburgring lap time of any road-ready BMW. A 3.0-liter BMW M TwinPower Turbo inline-6 cylinder engine delivers 543 horsepower, while the re-tuned suspension is lowered by 8mm for increased precision and more dynamic handling.</p>
-        </div>
-    </div>
-
-
-
-    <div class="hotspot" id="kinetic-absorption" style="top: 69%; left: 49%;">
-        <div class="dot"></div>
-        <div class="cl linedown-v"></div>
-        <div class="ms bottom-card">
-            <h3>Thoroughly track-focused.</h3>
-            <p>M Carbon Ceramic Brakes with red calipers augment the lightweight matte black forged alloy wheels with CSL-exclusive design. Conquer the competition with ultra high-performance available Michelin® Pilot® Sport Cup 2 R tires. </p>
-        </div>
-    </div>
+                <div class="hotspot" id="Astounding" style="top: 40%; left: 33%;">
+                    <div class="dot"></div>
+                    <div class="cl lineleft-h"></div>
+                    <div class="ms left-card">
+                        <h3>Astounding performance.</h3>
+                        <p>Born for the racetrack, the Limited Edition BMW M4 CSL has achieved the fastest Nürburgring
+                            lap time of any road-ready BMW. A 3.0-liter BMW M TwinPower Turbo inline-6 cylinder engine
+                            delivers 543 horsepower, while the re-tuned suspension is lowered by 8mm for increased
+                            precision and more dynamic handling.</p>
+                    </div>
+                </div>
 
 
 
-    <div class="hotspot" id="exterior" style="top: 50%; left: 65%;">
-        <div class="dot"></div>
-        <div class="cl lineright"></div>
-        <div class="ms right-card">
-        <h3>An air-slicing exterior.</h3>
-        <p>The lightweight carbon fiber hood and front splitter enhance the exceptional aerodynamics and visuals of the M4 CSL. A carbon fiber rear diffuser and trunk lid with integrated ducktail improve downforce, stability, and maneuverability at increased speeds.</p>
-        </div>
-    </div>
+                <div class="hotspot" id="kinetic-absorption" style="top: 69%; left: 49%;">
+                    <div class="dot"></div>
+                    <div class="cl linedown-v"></div>
+                    <div class="ms bottom-card">
+                        <h3>Thoroughly track-focused.</h3>
+                        <p>M Carbon Ceramic Brakes with red calipers augment the lightweight matte black forged alloy
+                            wheels with CSL-exclusive design. Conquer the competition with ultra high-performance
+                            available Michelin® Pilot® Sport Cup 2 R tires. </p>
+                    </div>
+                </div>
 
 
 
-    <div class="hotspot" id=" power" style="top: 35%; left: 60%;">
-        <div class="dot"></div>
-        <div class="cl lineright"></div>
-        <div class="ms right-card">
-            <h3>The seat of power.</h3>
-            <p>Standard M Carbon Full Bucket seats are lightweight and aggressively bolstered. The removal of rear seats and a lightweight center console further reduce the weight of the M4 CSL.</p>
-        </div>
-    </div>
-</div>
+                <div class="hotspot" id="exterior" style="top: 50%; left: 65%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>An air-slicing exterior.</h3>
+                        <p>The lightweight carbon fiber hood and front splitter enhance the exceptional aerodynamics and
+                            visuals of the M4 CSL. A carbon fiber rear diffuser and trunk lid with integrated ducktail
+                            improve downforce, stability, and maneuverability at increased speeds.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="hotspot" id=" power" style="top: 35%; left: 60%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>The seat of power.</h3>
+                        <p>Standard M Carbon Full Bucket seats are lightweight and aggressively bolstered. The removal
+                            of rear seats and a lightweight center console further reduce the weight of the M4 CSL.</p>
+                    </div>
+                </div>
+            </div>
     </div>
     </main>
 
 
-<section class="details-section">
-    <div class="separator-container">
-        <div class="line-glow"></div>
-    </div>
-
-    <div class="content-wrapper">
-        <div class="info-text">
-            <h2>Technical Specifications</h2>
-            <p>The BMW M4 CSL is more than just a car; it's a statement of engineering excellence. By stripping away 240 pounds of weight and retuning the chassis, BMW has created a beast that tames the track and the street alike.</p>
+    <section class="details-section">
+        <div class="separator-container">
+            <div class="line-glow"></div>
         </div>
 
-        <table class="spec-table">
-    <thead>
-        <tr>
-            <th>Feature</th>
-            <th>Specifications</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Engine</td>
-            <td>3.0L M TwinPower Turbo, Inline 6-Cylinder</td>
-        </tr>
-        <tr>
-            <td>Horsepower</td>
-            <td>550 hp</td>
-        </tr>
-        <tr>
-            <td>Torque</td>
-            <td>650 Nm</td>
-        </tr>
-        <tr>
-            <td>Transmission</td>
-            <td>8-Speed M Steptronic Automatic</td>
-        </tr>
-        <tr>
-            <td>Drivetrain</td>
-            <td>Rear-Wheel Drive (RWD)</td>
-        </tr>
-        <tr>
-            <td>Acceleration (0-100 km/h)</td>
-            <td>3.7 Seconds</td>
-        </tr>
-        <tr>
-            <td>Top Speed</td>
-            <td>307 km/h</td>
-        </tr>
-        <tr>
-            <td>Weight</td>
-            <td>1.625 kg</td>
-        </tr>
-        <tr>
-            <td>Seating Capacity</td>
-            <td>2 Seats</td>
-        </tr>
-        <tr>
-            <td>Braking System</td>
-            <td>M Carbon Ceramic Brakes (Standard)</td>
-        </tr>
-    </tbody>
-</table>
-    </div>
-</section>
-<footer>
+        <div class="content-wrapper">
+            <div class="info-text">
+                <h2>Technical Specifications</h2>
+                <p>The BMW M4 CSL is more than just a car; it's a statement of engineering excellence. By stripping away
+                    240 pounds of weight and retuning the chassis, BMW has created a beast that tames the track and the
+                    street alike.</p>
+            </div>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Specifications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engine</td>
+                        <td>3.0L M TwinPower Turbo, Inline 6-Cylinder</td>
+                    </tr>
+                    <tr>
+                        <td>Horsepower</td>
+                        <td>550 hp</td>
+                    </tr>
+                    <tr>
+                        <td>Torque</td>
+                        <td>650 Nm</td>
+                    </tr>
+                    <tr>
+                        <td>Transmission</td>
+                        <td>8-Speed M Steptronic Automatic</td>
+                    </tr>
+                    <tr>
+                        <td>Drivetrain</td>
+                        <td>Rear-Wheel Drive (RWD)</td>
+                    </tr>
+                    <tr>
+                        <td>Acceleration (0-100 km/h)</td>
+                        <td>3.7 Seconds</td>
+                    </tr>
+                    <tr>
+                        <td>Top Speed</td>
+                        <td>307 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>1.625 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Seating Capacity</td>
+                        <td>2 Seats</td>
+                    </tr>
+                    <tr>
+                        <td>Braking System</td>
+                        <td>M Carbon Ceramic Brakes (Standard)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
         <div class="footer-links-container">
             <div class="footer-column">
                 <h3>About us</h3>
@@ -206,4 +223,5 @@
     <script src="../js file/scriptHome.js"></script>
 
 </body>
+
 </html>

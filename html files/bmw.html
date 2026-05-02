@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW </title>
     <link rel="stylesheet" href="../css files/m5.css">
-        <link rel="stylesheet" href="../css files/globe.css">
+    <link rel="stylesheet" href="../css files/globe.css">
     <link href="../css files/styleHome.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@1,400..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
+        <button id="theme-switch">
+            <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
+            <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon"
+                alt="lightMode">
+        </button>
         <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -35,141 +44,143 @@
         </nav>
     </header>
     <main class="hero">
-    
-    <video autoplay loop muted playsinline class="back-video">
-        <source src="../vedio/ved.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
 
-    
-    <div class="content">
-        <h1>Bmw</h1>
-        <p>The Ultimate Driving Machine</p>
-        
-    </div>
-</main>
-<section class="specials">
-    <h2>TODAYS SPECIALS</h2>
-    <div class="car-grid">
-        <!-- Car Card 1 -->
-        <a href="../html files/340.html" class="car-card-link">
-            <div class="car-card">
-                <img src="../imges/341i.jpg" alt="BMW 340i">
-                <div class="car-info">
-                    <h3>BMW 340i</h3>
-                    <div class="car-specs">
-                        <div class="spec-item"><i class="fas fa-car"></i> 250 km/h</div>
-                        <div class="spec-item"><i class="fas fa-bolt"></i> 382 HP</div>
-                        <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
-                    </div>
-                    <span class="price"><del style="font-size: 0.8rem; opacity: 0.6;">$65.000</del><br>$60.000</span>
-                </div>
-            </div>
-        </a>
+        <video autoplay loop muted playsinline class="back-video">
+            <source src="../vedio/ved.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <!-- Car Card 2 -->
-        <a href="../html files/740-bm.html" class="car-card-link">
-            <div class="car-card">
-                <img src="../imges/740i.jpg" alt="BMW 740i">
-                <div class="car-info">
-                    <h3>BMW 740i</h3>
-                    <div class="car-specs">
-                        <div class="spec-item"><i class="fas fa-car"></i> 250 km/h</div>
-                        <div class="spec-item"><i class="fas fa-bolt"></i> 375 HP</div>
-                        <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
-                    </div>
-                    <span class="price">$96.000</span>
-                </div>
-            </div>
-        </a>
 
-        <!-- Car Card 3 -->
-        <a href="../html files/m4-bm.html" class="car-card-link">
-            <div class="car-card">
-                <img src="../imges/M4.png" alt="BMW M4">
-                <div class="car-info">
-                    <h3>BMW M4</h3>
-                    <div class="car-specs">
-                        <div class="spec-item"><i class="fas fa-car"></i> 290 km/h</div>
-                        <div class="spec-item"><i class="fas fa-bolt"></i> 503 HP</div>
-                        <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
-                    </div>
-                    <span class="price"><del style="font-size: 0.8rem; opacity: 0.6;">$90.000</del><br>$80.000</span>
-                </div>
-            </div>
-        </a>
+        <div class="content">
+            <h1>Bmw</h1>
+            <p>The Ultimate Driving Machine</p>
 
-        <!-- Car Card 4 -->
-       <a href="../html files/x5.html" class="car-card-link">
-            <div class="car-card">
-                <img src="../imges/x5.jpg" alt="BMW x5">
-                <div class="car-info">
-                    <h3>BMW x5</h3>
-                    <div class="car-specs">
-                        <div class="spec-item"><i class="fas fa-car"></i> 209 km/h</div>
-                        <div class="spec-item"><i class="fas fa-bolt"></i> 523 HP</div>
-                        <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
+        </div>
+    </main>
+    <section class="specials">
+        <h2>TODAYS SPECIALS</h2>
+        <div class="car-grid">
+            <!-- Car Card 1 -->
+            <a href="../html files/340.html" class="car-card-link">
+                <div class="car-card">
+                    <img src="../imges/341i.jpg" alt="BMW 340i">
+                    <div class="car-info">
+                        <h3>BMW 340i</h3>
+                        <div class="car-specs">
+                            <div class="spec-item"><i class="fas fa-car"></i> 250 km/h</div>
+                            <div class="spec-item"><i class="fas fa-bolt"></i> 382 HP</div>
+                            <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
+                        </div>
+                        <span class="price"><del
+                                style="font-size: 0.8rem; opacity: 0.6;">$65.000</del><br>$60.000</span>
                     </div>
-                    <span class="price">$92,025</span>
                 </div>
-            </div>
-        </a>
-    </div>
-</section> 
+            </a>
+
+            <!-- Car Card 2 -->
+            <a href="../html files/740-bm.html" class="car-card-link">
+                <div class="car-card">
+                    <img src="../imges/740i.jpg" alt="BMW 740i">
+                    <div class="car-info">
+                        <h3>BMW 740i</h3>
+                        <div class="car-specs">
+                            <div class="spec-item"><i class="fas fa-car"></i> 250 km/h</div>
+                            <div class="spec-item"><i class="fas fa-bolt"></i> 375 HP</div>
+                            <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
+                        </div>
+                        <span class="price">$96.000</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Car Card 3 -->
+            <a href="../html files/m4-bm.html" class="car-card-link">
+                <div class="car-card">
+                    <img src="../imges/M4.png" alt="BMW M4">
+                    <div class="car-info">
+                        <h3>BMW M4</h3>
+                        <div class="car-specs">
+                            <div class="spec-item"><i class="fas fa-car"></i> 290 km/h</div>
+                            <div class="spec-item"><i class="fas fa-bolt"></i> 503 HP</div>
+                            <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
+                        </div>
+                        <span class="price"><del
+                                style="font-size: 0.8rem; opacity: 0.6;">$90.000</del><br>$80.000</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Car Card 4 -->
+            <a href="../html files/x5.html" class="car-card-link">
+                <div class="car-card">
+                    <img src="../imges/x5.jpg" alt="BMW x5">
+                    <div class="car-info">
+                        <h3>BMW x5</h3>
+                        <div class="car-specs">
+                            <div class="spec-item"><i class="fas fa-car"></i> 209 km/h</div>
+                            <div class="spec-item"><i class="fas fa-bolt"></i> 523 HP</div>
+                            <div class="spec-item"><i class="fas fa-gas-pump"></i> Petrol</div>
+                        </div>
+                        <span class="price">$92,025</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
     <footer>
-    <div class="footer-links-container">
-        <div class="footer-column">
-            <h3>About us</h3>
-            <ul>
-                <li><a href="../html files/team.html">Our team</a></li>
-                <li><a href="#">Browse Inventory</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Our story</a></li>
-                <li><a href="#">Careers</a></li>
-            </ul>
-        </div>
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="../html files/team.html">Our team</a></li>
+                    <li><a href="#">Browse Inventory</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-column">
-            <h3>Support</h3>
-            <ul>
-                <li><a href="html files/contact.html">Contact us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Shipping info</a></li>
-                <li><a href="#">Returns</a></li>
-                <li><a href="#">Track order</a></li>
-            </ul>
-        </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="html files/contact.html">Contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track order</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-column">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Cookie policy</a></li>
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Offers</a></li>
-            </ul>
-        </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-column">
-            <h3>Connect</h3>
-            <ul>
-                <li><a href="https://www.instagram.com/">Follow on Instagram</a></li>
-                <li><a href="https://www.facebook.com/">Follow on Facebook</a></li>
-                <li><a href="https://twitter.com/">Follow on Twitter</a></li>
-                <li><a href="https://www.tiktok.com/">Follow on TikTok</a></li>
-                <li><a href="https://www.youtube.com/">Subscribe</a></li>
-            </ul>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/">Follow on Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Follow on Facebook</a></li>
+                    <li><a href="https://twitter.com/">Follow on Twitter</a></li>
+                    <li><a href="https://www.tiktok.com/">Follow on TikTok</a></li>
+                    <li><a href="https://www.youtube.com/">Subscribe</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
-    </div>
-</footer>
-<script src="../js file/globe.js"></script>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js file/globe.js"></script>
     <script src="../js file/scriptHome.js"></script>
 
-    
+
 </body>
 
 
