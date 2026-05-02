@@ -340,15 +340,29 @@ body.lightMode .dropdown-content {
     top: 100%;
     z-index: 999;
 }
-
-
 /*log in icon &theme icon &search to make them under the nav bar */
 body.lightMode .top-right-auth,
 body.lightMode #theme-switch {
     position: absolute !important;
     top: 80px !important;
 }
-
+body.lightMode .search-box img {
+    position: absolute !important;
+    top: 80px !important;
+    right: 70px !important; 
+    margin: 0 !important; 
+    filter: brightness(0) !important; 
+    width: 35px !important; 
+}
+body.lightMode #searchInput {
+    position: absolute !important;
+    top: 75px !important;
+    right: 110px !important;
+    margin: 0 !important;
+    background: white !important;
+    color: black !important;
+    border: 1px solid #992219 !important;
+}
 /* alternate the icons */
 body.lightMode .top-right-auth {
     right: auto !important;
@@ -358,4 +372,19 @@ body.lightMode .top-right-auth {
 body.lightMode #theme-switch {
     left: auto !important;
     right: 20px !important;
+}
+/*change light mode and position in the 4 category cars*/
+body.lightMode:has(.specials) {
+    background: linear-gradient(to right, #992219, white) !important;
+    direction: rtl;
+}
+/*change lightMode and position in all info cars*/
+ body.lightMode:has(.carView){
+    background: linear-gradient(to right, #992219, white) !important;
+    direction: ltr;
+ }
+ /* nozbet el dark icon hena 3shan etharaket */
+ body.lightMode:has(.carView) #theme-switch {
+    left: auto !important;
+    right: 50px !important;
 }
