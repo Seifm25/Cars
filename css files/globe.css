@@ -363,6 +363,11 @@ body.lightMode #searchInput {
     color: black !important;
     border: 1px solid #992219 !important;
 }
+body.lightMode #resultslist{
+    top: 115px;
+    right: 110px;
+    background: var(--nav-links-backhover);
+}
 /* alternate the icons */
 body.lightMode .top-right-auth {
     right: auto !important;
