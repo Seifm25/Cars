@@ -359,3 +359,18 @@ body.lightMode #theme-switch {
     left: auto !important;
     right: 20px !important;
 }
+/*change light mode and position in the 4 category cars*/
+body.lightMode:has(.specials) {
+    background: linear-gradient(to right, #992219, white) !important;
+    direction: rtl;
+}
+/*change lightMode and position in all info cars*/
+ body.lightMode:has(.carView){
+    background: linear-gradient(to right, #992219, white) !important;
+    direction: ltr;
+ }
+ /* nozbet el dark icon hena 3shan etharaket */
+ body.lightMode:has(.carView) #theme-switch {
+    left: auto !important;
+    right: 50px !important;
+}
