@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi A8</title>
+    <link href="../css files/styleHome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css files/globe.css">
+    <link href="../css files/m4-bm.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<header class="welcome-section">
+    <h1>An A8 knows no limit.</h1>
+    <div class="glow-line"></div>
+
+    <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+            <div id="cars-dropdown" class="dropdown-content">
+                <a href="../html files/bmw.html">BMW</a>
+                <a href="../html files/mercedes.html">Mercedes</a>
+                <a href="../html files/audi.html">Audi</a>
+                <a href="../html files/porche.html">Porsche</a>
+            </div>
+        </div>
+        <a href="../html files/about.html">About</a>
+        <a href="../html files/contact.html">Contact us</a>
+    </nav>
+</header>
+
+<body>
+    <button id="theme-switch">
+        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon">
+        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon">
+    </button>
+
+    <div class="present">
+        <main class="carView">
+            <div class="imgcon">
+                <img src="../imgs/a8.png" alt="Audi A8" class="car">
+                <svg class="lines"></svg>
+
+                <!-- Performance -->
+                <div class="hotspot" style="top: 40%; left: 33%;">
+                    <div class="dot"></div>
+                    <div class="cl lineleft-h"></div>
+                    <div class="ms left-card">
+                        <h3>Astounding performance.</h3>
+                        <p>
+                            Born for refined excellence, the Audi A8 delivers smooth and powerful performance with unmatched luxury. 
+                            A 3.0-liter turbocharged V6 engine produces 335 horsepower, while adaptive air suspension enhances ride comfort, precision, and dynamic handling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Control -->
+                <div class="hotspot" style="top: 69%; left: 49%;">
+                    <div class="dot"></div>
+                    <div class="cl linedown-v"></div>
+                    <div class="ms bottom-card">
+                        <h3>Thoroughly refined.</h3>
+                        <p>
+                            Advanced braking systems and intelligent driver assistance technologies ensure maximum safety and control. 
+                            Experience confident driving with precise handling, smooth response, and stability across all road conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exterior -->
+                <div class="hotspot" style="top: 50%; left: 65%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>An elegant exterior.</h3>
+                        <p>
+                            The Audi A8 showcases a sophisticated design with sleek lines and aerodynamic efficiency. 
+                            Its bold front grille, refined body contours, and modern lighting create a commanding presence while enhancing performance and stability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interior -->
+                <div class="hotspot" style="top: 35%; left: 60%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>The seat of luxury.</h3>
+                        <p>
+                            Inside the Audi A8, premium materials, advanced technology, and spacious seating define true comfort. 
+                            A quiet cabin, ambient lighting, and executive rear seating provide a first-class experience for both driver and passengers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Details -->
+    <section class="details-section">
+        <div class="separator-container">
+            <div class="line-glow"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="info-text">
+                <h2>Technical Specifications</h2>
+                <p>
+                    The Audi A8 is more than just a luxury sedan; it's a statement of engineering excellence. By combining advanced technology, refined performance, 
+                    and superior comfort, Audi has created a vehicle that excels in both daily driving and long-distance journeys alike.
+                </p>
+            </div>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Specifications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engine</td>
+                        <td>3.0L Turbocharged V6</td>
+                    </tr>
+                    <tr>
+                        <td>Horsepower</td>
+                        <td>335 hp</td>
+                    </tr>
+                    <tr>
+                        <td>Torque</td>
+                        <td>500 Nm</td>
+                    </tr>
+                    <tr>
+                        <td>Transmission</td>
+                        <td>8-Speed Automatic</td>
+                    </tr>
+                    <tr>
+                        <td>Drivetrain</td>
+                        <td>Quattro All-Wheel Drive (AWD)</td>
+                    </tr>
+                    <tr>
+                        <td>Acceleration (0-100 km/h)</td>
+                        <td>5.6 Seconds</td>
+                    </tr>
+                    <tr>
+                        <td>Top Speed</td>
+                        <td>250 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>2,100 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Seating Capacity</td>
+                        <td>5 Seats</td>
+                    </tr>
+                    <tr>
+                        <td>Braking System</td>
+                        <td>Advanced Braking System</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js file/globe.js"></script>
+    <script src="../js file/scriptHome.js"></script>
+
+</body>
+</html>

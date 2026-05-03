@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi RS6</title>
+    <link href="../css files/styleHome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css files/globe.css">
+    <link href="../css files/m4-bm.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<header class="welcome-section">
+    <h1>An RS6 knows no limit.</h1>
+    <div class="glow-line"></div>
+
+    <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+            <div id="cars-dropdown" class="dropdown-content">
+                <a href="../html files/bmw.html">BMW</a>
+                <a href="../html files/mercedes.html">Mercedes</a>
+                <a href="../html files/audi.html">Audi</a>
+                <a href="../html files/porche.html">Porsche</a>
+            </div>
+        </div>
+        <a href="../html files/about.html">About</a>
+        <a href="../html files/contact.html">Contact us</a>
+    </nav>
+</header>
+
+<body>
+    <button id="theme-switch">
+        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon">
+        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon">
+    </button>
+
+    <div class="present">
+        <main class="carView">
+            <div class="imgcon">
+                <img src="../imgs/rs6.png" alt="Audi RS6" class="car">
+                <svg class="lines"></svg>
+
+                <!-- Performance -->
+                <div class="hotspot" style="top: 40%; left: 33%;">
+                    <div class="dot"></div>
+                    <div class="cl lineleft-h"></div>
+                    <div class="ms left-card">
+                        <h3>Astounding performance.</h3>
+                        <p>
+                            Born for high-speed dominance, the Audi RS6 Avant has achieved exceptional performance as one of the fastest high-performance wagons ever built. 
+                            A 4.0-liter twin-turbocharged V8 engine delivers 591 horsepower, while the adaptive air suspension enhances precision and more dynamic handling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brakes -->
+                <div class="hotspot" style="top: 69%; left: 49%;">
+                    <div class="dot"></div>
+                    <div class="cl linedown-v"></div>
+                    <div class="ms bottom-card">
+                        <h3>Thoroughly track-focused.</h3>
+                        <p>
+                            Carbon ceramic brakes with red calipers augment the lightweight alloy wheels with RS-exclusive design. 
+                            Conquer the road with ultra high-performance available tires, delivering exceptional grip and maximum control at every speed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exterior -->
+                <div class="hotspot" style="top: 50%; left: 65%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>An air-slicing exterior.</h3>
+                        <p>
+                            The lightweight carbon fiber elements and aggressive front splitter enhance the exceptional aerodynamics and visuals of the RS6 Avant. 
+                            A rear diffuser and roof spoiler improve downforce, stability, and maneuverability at increased speeds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interior -->
+                <div class="hotspot" style="top: 35%; left: 60%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>The seat of power.</h3>
+                        <p>
+                            Standard RS sport seats are lightweight and aggressively bolstered. The spacious rear seating and refined interior layout further enhance comfort 
+                            while maintaining a performance-focused driving experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Details -->
+    <section class="details-section">
+        <div class="separator-container">
+            <div class="line-glow"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="info-text">
+                <h2>Technical Specifications</h2>
+                <p>
+                    The Audi RS6 Avant is more than just a car; it's a statement of engineering excellence. By combining high performance with everyday usability and retuning 
+                    the chassis, Audi has created a machine that dominates both the road and long-distance driving alike.
+                </p>
+            </div>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Specifications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engine</td>
+                        <td>4.0L Twin-Turbo V8</td>
+                    </tr>
+                    <tr>
+                        <td>Horsepower</td>
+                        <td>591 hp</td>
+                    </tr>
+                    <tr>
+                        <td>Torque</td>
+                        <td>800 Nm</td>
+                    </tr>
+                    <tr>
+                        <td>Transmission</td>
+                        <td>8-Speed Automatic</td>
+                    </tr>
+                    <tr>
+                        <td>Drivetrain</td>
+                        <td>Quattro All-Wheel Drive (AWD)</td>
+                    </tr>
+                    <tr>
+                        <td>Acceleration (0-100 km/h)</td>
+                        <td>3.6 Seconds</td>
+                    </tr>
+                    <tr>
+                        <td>Top Speed</td>
+                        <td>305 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>2,075 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Seating Capacity</td>
+                        <td>5 Seats</td>
+                    </tr>
+                    <tr>
+                        <td>Braking System</td>
+                        <td>Carbon Ceramic Brakes (Optional)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js file/globe.js"></script>
+    <script src="../js file/scriptHome.js"></script>
+
+</body>
+</html>
