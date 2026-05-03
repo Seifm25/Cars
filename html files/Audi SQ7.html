@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi SQ7</title>
+    <link href="../css files/styleHome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css files/globe.css">
+    <link href="../css files/m4-bm.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<header class="welcome-section">
+    <h1>An SQ7 knows no limit.</h1>
+    <div class="glow-line"></div>
+
+    <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+            <div id="cars-dropdown" class="dropdown-content">
+                <a href="../html files/bmw.html">BMW</a>
+                <a href="../html files/mercedes.html">Mercedes</a>
+                <a href="../html files/audi.html">Audi</a>
+                <a href="../html files/porche.html">Porsche</a>
+            </div>
+        </div>
+        <a href="../html files/about.html">About</a>
+        <a href="../html files/contact.html">Contact us</a>
+    </nav>
+</header>
+
+<body>
+    <button id="theme-switch">
+        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon">
+        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon">
+    </button>
+
+    <div class="present">
+        <main class="carView">
+            <div class="imgcon">
+                <img src="../imgs/sq7.png" alt="Audi SQ7" class="car">
+                <svg class="lines"></svg>
+
+                <!-- Performance -->
+                <div class="hotspot" style="top: 40%; left: 33%;">
+                    <div class="dot"></div>
+                    <div class="cl lineleft-h"></div>
+                    <div class="ms left-card">
+                        <h3>Astounding performance.</h3>
+                        <p>
+                            Born for powerful versatility, the Audi SQ7 delivers exceptional SUV performance with refined luxury. 
+                            A 4.0-liter twin-turbocharged V8 engine produces 500 horsepower, while adaptive air suspension enhances 
+                            precision, stability, and dynamic handling across all terrains.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brakes -->
+                <div class="hotspot" style="top: 69%; left: 49%;">
+                    <div class="dot"></div>
+                    <div class="cl linedown-v"></div>
+                    <div class="ms bottom-card">
+                        <h3>Thoroughly controlled.</h3>
+                        <p>
+                            High-performance braking systems with bold calipers complement the robust alloy wheels with S-exclusive design. 
+                            Conquer every road with confidence using advanced traction and high-performance tires that deliver grip and control at every speed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exterior -->
+                <div class="hotspot" style="top: 50%; left: 65%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>An air-slicing exterior.</h3>
+                        <p>
+                            The bold exterior design of the SQ7 combines aerodynamic efficiency with SUV strength. 
+                            Sculpted lines, an aggressive front fascia, and a sporty rear diffuser enhance both presence and performance, 
+                            improving stability and control at higher speeds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interior -->
+                <div class="hotspot" style="top: 35%; left: 60%;">
+                    <div class="dot"></div>
+                    <div class="cl lineright"></div>
+                    <div class="ms right-card">
+                        <h3>The seat of power.</h3>
+                        <p>
+                            Inside the Audi SQ7, premium sport seats are designed for comfort and support. 
+                            A spacious three-row interior and refined cabin layout provide luxury for all passengers 
+                            while maintaining a driver-focused performance experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Details -->
+    <section class="details-section">
+        <div class="separator-container">
+            <div class="line-glow"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="info-text">
+                <h2>Technical Specifications</h2>
+                <p>
+                    The Audi SQ7 is more than just an SUV; it's a statement of engineering excellence. By combining powerful performance, 
+                    advanced technology, and everyday practicality, Audi has created a vehicle that dominates both city roads and long journeys alike.
+                </p>
+            </div>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Specifications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engine</td>
+                        <td>4.0L Twin-Turbo V8</td>
+                    </tr>
+                    <tr>
+                        <td>Horsepower</td>
+                        <td>500 hp</td>
+                    </tr>
+                    <tr>
+                        <td>Torque</td>
+                        <td>770 Nm</td>
+                    </tr>
+                    <tr>
+                        <td>Transmission</td>
+                        <td>8-Speed Automatic</td>
+                    </tr>
+                    <tr>
+                        <td>Drivetrain</td>
+                        <td>Quattro All-Wheel Drive (AWD)</td>
+                    </tr>
+                    <tr>
+                        <td>Acceleration (0-100 km/h)</td>
+                        <td>4.1 Seconds</td>
+                    </tr>
+                    <tr>
+                        <td>Top Speed</td>
+                        <td>250 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>2,400 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Seating Capacity</td>
+                        <td>7 Seats</td>
+                    </tr>
+                    <tr>
+                        <td>Braking System</td>
+                        <td>High-Performance Brakes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js file/globe.js"></script>
+    <script src="../js file/scriptHome.js"></script>
+
+</body>
+</html>
