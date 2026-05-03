@@ -1,19 +1,16 @@
-let lightMode = localStorage.getItem('lightMode'); 
-const themeSwitch = document.getElementById('theme-switch');
+let darkMode=localSٍtorage.getItem('lightMode') 
+const themeSwitch=document.getElementById('theme-switch')
 
-const enablelightMode = () => {
-    document.body.classList.add('lightMode');
-    localStorage.setItem('lightMode', 'active');
+const enabledarkMode=()=>{
+    document.body.classList.add('lightMode')
+    localStorage.setItem('lightMode','active')
 }
-
-const disablelightMode = () => {
-    document.body.classList.remove('lightMode');
-    localStorage.setItem('lightMode', null);
+const disabledarkMode=()=>{
+    document.body.classList.remove('lightMode')
+    localStorage.setItem('lightMode',null)
 }
-
-if (lightMode === "active") enablelightMode();
-
-themeSwitch.addEventListener("click", () => {
-    lightMode = localStorage.getItem('lightMode');
-    lightMode !== "active" ? enablelightMode() : disablelightMode();
-});
+if(darkMode=="active") enabledarkMode()
+themeSwitch.addEventListener("click",()=>{
+    darkMode=localStorage.getItem('lightMode')
+    darkMode!="active"?enabledarkMode():disabledarkMode()
+})
