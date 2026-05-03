@@ -11,6 +11,24 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
         rel="stylesheet">
+                <style>
+.imgcon::before {
+    content: "";
+    position: absolute;
+    top: 78%; 
+    left: 0;
+    width: 100%;
+    height: 70%; 
+    background-image: url("../imgs/sq7.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transform: scaleY(-1); 
+    mask-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0.2; 
+    z-index: 1;
+}
+        </style>
 </head>
 
 <header class="welcome-section">
@@ -51,7 +69,6 @@
                 <img src="../imgs/sq7.png" alt="Audi SQ7" class="car">
                 <svg class="lines"></svg>
 
-                <!-- Performance -->
                 <div class="hotspot" style="top: 40%; left: 33%;">
                     <div class="dot"></div>
                     <div class="cl lineleft-h"></div>
@@ -65,7 +82,6 @@
                     </div>
                 </div>
 
-                <!-- Brakes -->
                 <div class="hotspot" style="top: 69%; left: 49%;">
                     <div class="dot"></div>
                     <div class="cl linedown-v"></div>
@@ -78,7 +94,6 @@
                     </div>
                 </div>
 
-                <!-- Exterior -->
                 <div class="hotspot" style="top: 50%; left: 65%;">
                     <div class="dot"></div>
                     <div class="cl lineright"></div>
@@ -92,7 +107,6 @@
                     </div>
                 </div>
 
-                <!-- Interior -->
                 <div class="hotspot" style="top: 35%; left: 60%;">
                     <div class="dot"></div>
                     <div class="cl lineright"></div>
@@ -109,7 +123,6 @@
         </main>
     </div>
 
-    <!-- Details -->
     <section class="details-section">
         <div class="separator-container">
             <div class="line-glow"></div>
