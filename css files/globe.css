@@ -100,7 +100,7 @@ body.lightMode .dark-icon {
 }
 
 body.lightMode {
-    /*home body&nav style in light mode*/
+    
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
     --nav-links-backhover: #4d3b3bd4;
@@ -108,13 +108,11 @@ body.lightMode {
     --log: var(--text-black);
     --image-boxshad: rgba(0, 0, 0, 0.9);
     --barhom-back: rgba(0, 0, 0, 0.8);
-    /* <--------------------------------------------------> */
     direction: rtl;
 }
 
 body.lightMode footer {
     background-color: #4d3b3bd4;
-    /*<------------------3shan el footer not inverted ----------------------->  */
     direction: ltr;
 }
 
@@ -122,34 +120,28 @@ body.lightMode footer h3 {
     color: #5f0000;
 }
 
-/* white and grey video  */
 body.lightMode #bg-video {
     filter: blur(15px) brightness(1.7) grayscale(1);
     transition: filter 0.5s ease;
 }
 
 body.lightMode .video-container::after {
-    /* زودنا الشفافية شوية عشان تبيض الخلفية أكتر */
     background: rgba(255, 255, 255, 0.75);
     z-index: -1;
     transition: background 0.5s ease;
 }
 
-/* Navbar & Global - light */
 body.lightMode .nav-links a:hover {
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Contact - lightmode */
 body.lightMode:has(.contact-container) {
     background: linear-gradient(rgb(237 234 234 / 79%), rgb(239 8 8 / 79%)), url(../imges/mercedes1.jpeg);
     filter: blur(8px);
     background-size: cover;
     background-position: center;
-    /* <--------------------------------------> */
     direction: rtl;
-    /* <----------------------------> */
     filter: none;
     color: black;
 }
@@ -164,13 +156,11 @@ body.lightMode .contact-form-container {
     background: rgba(43, 26, 26, 0.897);
     border: 1px solid rgba(255, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    /* <--------------------------------> */
     margin-top: 70px;
 }
 
 body.lightMode .input-group label {
     color: #ffffff;
-    /* <-------------------------------> */
     direction: ltr;
 }
 
@@ -179,7 +169,6 @@ body.lightMode textarea {
     background: rgba(255, 255, 255, 0.76);
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #000000;
-    /* <------------------------> */
     direction: ltr;
 }
 
@@ -189,7 +178,6 @@ textarea:focus {
 
 }
 
-/* LogIn page lightMode */
 body.lightMode:has(#container) {
     background: linear-gradient(to right, #992219, white) !important;
 }
@@ -197,7 +185,6 @@ body.lightMode:has(#container) {
 body.lightMode .container {
     background-color: white !important;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    /* <--------------------> */
     direction: ltr;
 }
 
@@ -220,7 +207,6 @@ body.lightMode .container a:hover {
     color: #992219 !important;
 }
 
-/*lma ndos 3la el ay input w nekteb*/
 body.lightMode .container input {
     background-color: #f4f4f4 !important;
     color: #000000 !important;
@@ -237,13 +223,10 @@ body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
 
-/*goz2 el red elly beytharak kol shewaya */
 body.lightMode .toggle {
     background: linear-gradient(to left, #c13b3b, #8d2a39) !important;
 }
 
-/* background: #992219; */
-/*el text elly maktob gowah */
 body.lightMode .toggle-panel {
     color: white !important;
 }
@@ -258,13 +241,11 @@ body.lightMode .container button.hidden {
     color: white !important;
 }
 
-/* about page lightmode*/
 body.lightMode:has(.about-container) {
     background: linear-gradient(to right, #992219, white) !important;
     color: #000000 !important;
 }
 
-/*el words el red zay ma heya*/
 body.lightMode .accent-red,
 body.lightMode .section-icon i,
 body.lightMode .custom-list li i,
@@ -272,7 +253,6 @@ body.lightMode .trust-badge {
     color: #c13b3b !important;
 }
 
-/*white words to black words */
 body.lightMode p,
 body.lightMode .tagline,
 body.lightMode .section-text h2,
@@ -286,9 +266,6 @@ body.lightMode .social-icons a {
     border: 1px solid #c13b3b !important;
 }
 
-/*ABOUT US tkon a8m3 */
-
-/* gomlet scince 2014*/
 body.lightMode:has(.about-container) .about-badge {
     background: #9b261e4f !important;
     color: #000000 !important;
@@ -296,9 +273,6 @@ body.lightMode:has(.about-container) .about-badge {
 
 }
 
-/* <---------------------------------------------------------------> */
-/*change nav bar */
-/* change nav bar from column into row along the screen */
 body.lightMode .nav-links {
     direction: ltr;
     position: fixed !important;
@@ -317,12 +291,10 @@ body.lightMode .nav-links {
 
 }
 
-/* ashel el 3 shorat */
 body.lightMode .menu {
     display: none !important;
 }
 
-/* links in the nav bar*/
 body.lightMode .nav-links a {
     color: black !important;
     margin: 0 20px !important;
@@ -330,7 +302,6 @@ body.lightMode .nav-links a {
     font-size: 16px !important;
 }
 
-/* make the dropdown list tkon nazla lwa7daha*/
 body.lightMode.nav-links li {
     position: relative;
 }
@@ -340,7 +311,7 @@ body.lightMode .dropdown-content {
     top: 100%;
     z-index: 999;
 }
-/*log in icon &theme icon &search to make them under the nav bar */
+
 body.lightMode .top-right-auth,
 body.lightMode #theme-switch {
     position: absolute !important;
@@ -368,7 +339,7 @@ body.lightMode #resultslist{
     right: 110px;
     background: var(--nav-links-backhover);
 }
-/* alternate the icons */
+
 body.lightMode .top-right-auth {
     right: auto !important;
     left: 20px !important;
@@ -378,18 +349,18 @@ body.lightMode #theme-switch {
     left: auto !important;
     right: 20px !important;
 }
-/*change light mode and position in the 4 category cars*/
+
 body.lightMode:has(.specials) {
     background: linear-gradient(to right, #992219, white) !important;
     direction: rtl;
 }
-/*change lightMode and position in all info cars*/
- body.lightMode:has(.carView){
+
+body.lightMode:has(.carView){
     background: linear-gradient(to right, #992219, white) !important;
     direction: ltr;
- }
- /* nozbet el dark icon hena 3shan etharaket */
- body.lightMode:has(.carView) #theme-switch {
+}
+
+body.lightMode:has(.carView) #theme-switch {
     left: auto !important;
     right: 50px !important;
 }
