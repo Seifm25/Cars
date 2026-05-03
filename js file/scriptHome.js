@@ -36,6 +36,7 @@ document.addEventListener('click', function(event) {
     }
 
 });
+// ---------------------------------------------------------------------------------------------------------
 function openSearch() {
   const btn = document.getElementById("searchBtn");
   const input = document.getElementById("searchInput");
@@ -80,3 +81,4 @@ document.addEventListener('click', function(event) {
         input.value = ""; 
     }
 });
+// -------------------------------------------------------------------------------------------------------
