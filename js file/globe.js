@@ -9,7 +9,7 @@ const disablelightMode=()=>{
     document.body.classList.remove('lightMode')
     localStorage.setItem('lightMode',null)
 }
-if(lightMode=="active") enabledarkMode()
+if(lightMode=="active") enablelightMode()
 themeSwitch.addEventListener("click",()=>{
     lightMode=localStorage.getItem('lightMode')
     lightMode!="active"?enablelightMode():disablelightMode()
