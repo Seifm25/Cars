@@ -264,7 +264,7 @@ span{
     outline: none;
     transform: translateY(-2px); 
 }
-/* تنسيق حاوية الباسورد */
+
 .password-field {
     width: 100%;
     position: relative;
@@ -274,11 +274,10 @@ span{
 
 .password-field input {
     width: 100%;
-    padding-right: 45px !important; /* مساحة للأيقونة */
+    padding-right: 45px !important;
     margin: 8px 0;
 }
 
-/* تنسيق أيقونة العين */
 .toggle-password {
     position: absolute;
     right: 15px;
@@ -289,6 +288,6 @@ span{
 }
 
 .toggle-password:hover {
-    color: #c13b3b; /* يتغير للون الأحمر عند الوقوف عليه */
+    color: #c13b3b; 
 }
 

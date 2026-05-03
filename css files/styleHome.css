@@ -209,22 +209,29 @@ body {
     perspective: 2000px;
 }
 
-/* --- توزيع الصور في الأركان --- */
-/* العمود الأول (يسار) */
-.image-box:nth-child(1) { grid-column: 1; grid-row: 1; }
-.image-box:nth-child(3) { grid-column: 1; grid-row: 2; }
 
-/* العمود الثالث (يمين) */
-.image-box:nth-child(2) { grid-column: 3; grid-row: 1; }
-.image-box:nth-child(4) { grid-column: 3; grid-row: 2; }
+.image-box:nth-child(1) { 
+    grid-column: 1;
+    grid-row: 1; 
+}
+.image-box:nth-child(3) { 
+    grid-column: 1; 
+    grid-row: 2; 
+}
+.image-box:nth-child(2) { 
+    grid-column: 3; 
+    grid-row: 1; 
+}
+.image-box:nth-child(4) { 
+    grid-column: 3; 
+    grid-row: 2; 
+}
 
 .image-box {
     width: 100%;
     transform-style: preserve-3d; 
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-/* تأثير الميلان (الشمال لبرة واليمين لجوا) */
 .image-box:nth-child(odd) {
     transform: rotateY(25deg) rotateX(5deg);
 }
@@ -234,20 +241,17 @@ body {
 
 .image-box img {
     width: 100%; 
-    height: 300px; /* طول مناسب لوضع صورتين فوق بعض */
+    height: 300px; 
     object-fit: cover; 
     border-radius: 20px; 
     box-shadow: -15px 15px 40px var(--image-boxshad);
     border: 1px solid var(--image-boxshad);
 }
-
-/* تأثير الـ Hover */
 .image-box:hover {
     transform: rotateY(0deg) rotateX(0deg) translateZ(50px);
     z-index: 20;
 }
 
-/* --- تنسيق النص في المنتصف --- */
 .center-text-overlay {
     position: absolute;
     top: 50%;
@@ -256,8 +260,8 @@ body {
     text-align: center;
     color: var(--text);
     z-index: 10;
-    width: 30%; /* مساحة النص بين الصور */
-    pointer-events: none; /* للسماح للماوس بالوصول للصور خلف النص */
+    width: 30%; 
+    pointer-events: none; 
 }
 
 .center-text-overlay h1 {
@@ -275,7 +279,6 @@ body {
     margin-top: 10px;
 }
 
-/* استجابة الموبايل */
 @media (max-width: 768px) {
     .images-container {
         grid-template-columns: 1fr;
@@ -285,7 +288,6 @@ body {
     .image-box:nth-child(n) {
         grid-column: 1;
         grid-row: auto;
-       
     }
     .center-text-overlay {
         position: relative;
@@ -297,11 +299,11 @@ body {
         margin-top: 100px;
     }
 }
-/* --- تنسيق الفوتر --- */
+
 footer {
-    background-color: var(--footerbac); /* لون غامق جداً يميل للأسود */
+    background-color: var(--footerbac); 
     padding: 60px 20px 20px;
-    margin-top: 100px; /* مسافة بين الصور والفوتر */
+    margin-top: 100px; 
     border-top: 1px solid var(--homborder);
     position: relative;
     z-index: 10;
@@ -323,7 +325,7 @@ footer {
 }
 
 .footer-column h3 {
-    color: var(--texthovernav-border-btn); /* اللون الأحمر الخاص بكِ */
+    color: var(--texthovernav-border-btn); 
     font-size: 1.2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -350,7 +352,7 @@ footer {
 .footer-column ul li a:hover {
     color: var(--texthovernav-border-btn);
     opacity: 1;
-    padding-left: 5px; /* حركة بسيطة عند التمرير */
+    padding-left: 5px; 
 }
 
 .footer-bottom {
@@ -369,9 +371,9 @@ footer {
     transform: translateX(260px); 
     width: calc(100% - 260px) !important;
 }
-/* ------------------------------------------------------------------ */
+
 .search-box img {
-  width: 41px;
+    width: 41px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 50%;
@@ -382,52 +384,50 @@ footer {
 }
 
 #searchInput {
-  padding: 10px 15px;
-  border-radius: 25px;
-  border: 1px solid #ffffff33;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  outline: none;
-  backdrop-filter: blur(5px);
-  margin-top: 21px;
-  margin-left: 195px;
-  position: relative;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ffffff33;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    backdrop-filter: blur(5px);
+    margin-top: 21px;
+    margin-left: 195px;
+    position: relative;
 }
 
 #resultsList {
-  list-style: none;
-  padding: 0;
-  display: none; /* مخفية في البداية */
-  background: #2a2a2a;
-  margin-top: 10px;
-  width: 198px;
-  margin-top: 10px;
-  margin-left: 195px;
-  position: absolute;
-  z-index: 10000;
+    list-style: none;
+    padding: 0;
+    display: none; 
+    background: #2a2a2a;
+    margin-top: 10px;
+    width: 198px;
+    margin-top: 10px;
+    margin-left: 195px;
+    position: absolute;
+    z-index: 10000;
 }
 
 #resultsList li {
-  padding: 10px;
-  color: white;
-  border-bottom: 1px solid #333;
-  cursor: pointer;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
 }
 #resultsList li a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
 }
 
 #resultsList li:hover {
 
-  border: 1px solid rgba(255, 0, 0, 0.7);
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-  transform: translateX(1px);
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    transform: translateX(1px);
 }
-/* ---------------------------------------------------------------------------------------------------- */
 
-/* استجابة الموبايل */
 @media (max-width: 768px) {
     .footer-links-container {
         flex-direction: row; 
@@ -436,9 +436,8 @@ footer {
         gap: 20px;
     }
     .footer-column {
-        /* تحديد عرض العمود ليكون تقريباً نصف العرض لظهور اثنين بجانب بعض */
         flex: 0 0 calc(50% - 20px); 
-        min-width: 140px; /* تقليل الحد الأدنى للعرض ليسمح بوجود اثنين */
+        min-width: 140px; 
         text-align: center;
         margin-bottom: 20px;
     }
@@ -446,7 +445,7 @@ footer {
         padding-left: 0;
     }
 }
-/* حاوية الأيقونات */
+
 .icons-brands-container {
     display: flex;
     justify-content: center;
@@ -457,7 +456,6 @@ footer {
     position: relative;
 }
 
-/* العنصر الواحد (اللوجو والاسم) */
 .brand-item {
     text-align: center;
     transition: 0.3s;
@@ -467,11 +465,10 @@ footer {
     text-decoration: none;
 }
 
-/* صندوق اللوجو الدائري */
 .brand-box {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* جعلها دائرية */
+    border-radius: 50%; 
     overflow: hidden;
     border: 2px solid var(--homborder);
     background:var(--image-boxshad);
@@ -480,15 +477,13 @@ footer {
     box-shadow: 0 5px 15px var(--center-text-overlayshad);
 }
 
-/* الصورة داخل الدائرة */
 .brand-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* لضمان عدم تمطط اللوجو */
+    object-fit: cover; 
     transition: transform 0.4s;
 }
 
-/* اسم الماركة تحت اللوجو */
 .brand-item span {
     display: block;
     margin-top: 10px;
@@ -500,11 +495,11 @@ footer {
     transition: 0.3s;
 }
 
-/* تأثير عند تمرير الماوس */
+
 .brand-item:hover .brand-box {
     border-color: var(--texthovernav-border-btn);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--brand-itemhovshad); /* ضل بلونك الأحمر */
+    box-shadow: 0 10px 20px var(--brand-itemhovshad); 
 }
 
 .brand-item:hover .brand-img {
@@ -515,8 +510,6 @@ footer {
     color: var(--texthovernav-border-btn);
     opacity: 1;
 }
-
-/* للموبايل */
 @media (max-width: 480px) {
     .icons-brands-container {
         gap: 15px;
