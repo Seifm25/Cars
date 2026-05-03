@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
-        <link rel="stylesheet" href="../css files/globe.css">
-        <link rel="stylesheet" href="../css files/style-au.css">
-        <link href="../css files/styleHome.css" rel="stylesheet" >
+          <link rel="stylesheet" href="../css files/globe.css">
+    <link rel="stylesheet" href="../css files/style-au.css">
+    <link href="../css files/styleHome.css" rel="stylesheet">
+    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     </head>
     <body>
@@ -29,233 +28,146 @@
             </div>
             <script src="search.js"></script>
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css files/globe.css">
-    <link rel="stylesheet" href="../css files/style-au.css">
-    <link href="../css files/styleHome.css" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-
-<body>
-    <button id="theme-switch">
-        <img src="../imgs/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" class="dark-icon" alt="darkMode">
-        <img src="../imgs/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24 (1).png" class="light-icon" alt="lightMode">
-    </button>
-    <header>
-          <!-- ---------------------------------------------------------------------------------- -->
-         <div class="search-box">
-  <img src="../imgs/xx.png" id="searchBtn" onclick="openSearch()" alt="Search">
-  
-  <input type="search" id="searchInput" onkeyup="filterList()" placeholder="search.." style="display: none;">
-  
-  <ul id="resultsList">
-                <li><a href="../html files/bmw.html">BMW</a> </li>
-                <li><a href="../html files/740-bm.html">BMW 740i</a> </li>
-                <li><a href="../html files/340.html">BMW 340i</a> </li>
-                <li><a href="../html files/m4-bm.html">BMW M4</a> </li>
-                <li><a href="../html files/x5.html">BMW X5</a> </li>
-                <li><a href="../html files/mercedes.html">Mercedes</a> </li>
-                <li><a href="../html files/AMG S63.html">Mercedes Benz S63 AMG Coupe</a> </li>
-                <li><a href="../html files/GT-63.html">Mercedes AMG GT 63 4MATIC</a> </li>
-                <li><a href="../html files/AMG E53.html">Mercedes AMG E53 Coupe</a> </li>
-                <li><a href="../html files/S580.html">Mercedes Benz S580 4MATIC</a> </li>
-                <li><a href="../html files/Audi RS7.html">Audi RS7</a> </li>
-                <li><a href="../html files/RS6.html">Audi RS6</a> </li>
-                <li><a href="../html files/Audi SQ7.html">Audi SQ7</a> </li>
-                <li><a href="../html files/Audi A8.html">Audi A8</a> </li>
-                <li><a href="../html files/audi.html">Audi</a> </li>
-                <li><a href="../html files/911-porche.html">Porsche 911 Crrera</a> </li>
-                <li><a href="../html files/718-porche.html">Porsche 718 Cayman</a> </li>
-                <li><a href="../html files/cayenne-porche.html">Porsche Cayenne</a> </li>
-                <li><a href="../html files/panamera-porche.html">Porsche Panamera</a> </li>
-                <li><a href="../html files/porche.html">Porsche</a> </li>
-            </ul>
-</div>
-<script src="search.js"></script>
-<!-- --------------------------------------------------------------------------------------------------- -->
-       
-        <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <nav id="nav-links" class="nav-links">
-            <a href="../index.html">Home</a>
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
-                <div id="cars-dropdown" class="dropdown-content">
-                    <a href="bmw.html">BMW</a>
-                    <a href="mercedes.html">Mercedes</a>
-                    <a href="audi.html">Audi</a>
-                    <a href="porsche.html">Porsche</a>
-                </div>
+            <div class="menu" id="menu-icon" onclick="toggleMenu(event)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <a href="../html files/about.html">About</a>
-            <a href="../html files/contact.html">Contact us</a>
-        </nav>
-    </header>
 
+            <nav id="nav-links" class="nav-links">
+                <a href="../index.html">Home</a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleCars(event)">Cars ▾</a>
+                    <div id="cars-dropdown" class="dropdown-content">
+                        <a href="bmw.html">BMW</a>
+                        <a href="mercedes.html">Mercedes</a>
+                        <a href="audi.html">Audi</a>
+                        <a href="porsche.html">Porsche</a>
+                    </div>
+                </div>
+                <a href="../html files/about.html">About</a>
+                <a href="../html files/contact.html">Contact us</a>
+            </nav>
+        </header>
+        
     <div class="about-container">
-        <div class="about-content">
-
-
-            <div class="about-header-section">
-                <div class="about-badge">
-                    <i class="fas fa-car"></i> Since 2014
+        <section class="section">
+            <div class="heading">
+                <div class="head">
+                  Since 2014
                 </div>
                 <h1>About Us</h1>
-                <p class="tagline"><i class="fas fa-medal" style="margin-right: 8px; color:#ff9;"></i> Over 10 years of
-                    trust. <strong>Your first destination</strong> for guaranteed cars with full maintenance and
-                    competitive prices.</p>
+                <p class="tagline">
+                    Over 10 years of trust.<strong>Your first destination</strong> for guaranteed cars with full maintenance and competitive prices.
+                </p>
             </div>
-
-
-            <div class="hero-video">
-                <video id="myVideo" autoplay="" muted="" loop="" playsinline="" disablepictureinpicture=""
-                    preload="auto">
+            <div class="video">
+                <video autoplay muted loop playsinline >
                     <source src="../vedio/WhatsApp Video 2026-04-25 at 3.22.53 PM.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-overlay"></div>
             </div>
-
-            <div class="section">
-                <div class="section-text">
-                    <div class="section-icon"><i class="fas fa-star-of-life"></i></div>
-                    <h2>Why Choose Us?</h2>
-                    <p>With over a decade of excellence, we've built a reputation based on transparency, quality, and
-                        customer satisfaction. Every vehicle in our showroom is hand-selected by automotive experts who
-                        understand what truly matters to discerning drivers.</p>
-                    <ul class="custom-list">
-                        <li><i class="fas fa-check-circle"></i> 120-point technical inspection</li>
-                        <li><i class="fas fa-check-circle"></i> Free vehicle history report</li>
-                        <li><i class="fas fa-check-circle"></i> Extended warranty options</li>
-                        <li><i class="fas fa-check-circle"></i> Competitive financing rates</li>
+            <article class="article">
+                <div class="text">
+                    <h2> Why Choose Us?</h2>
+                    <p>
+                        With over a decade of excellence, we've built a reputation based on transparency, quality, and customer satisfaction. Every vehicle in our showroom is hand-selected by automotive experts who understand what truly matters to discerning drivers.
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 120-point technical inspection </li>
+                        <li><i class="fas fa-check-circle"></i> Free vehicle history report </li>
+                        <li><i class="fas fa-check-circle"></i> Extended warranty options </li>
+                        <li><i class="fas fa-check-circle"></i> Competitive financing rates </li>
                     </ul>
                 </div>
-                <div class="section-image">
-                    <img src="../imges/first.jpeg" alt="Premium car showroom floor with luxury vehicles"
-                        loading="eager">
+                <div class="image">
+                    <img src="../imges/first.jpeg" alt="Car Showroom">
                 </div>
-            </div>
-
-
-            <div class="section reverse">
-                <div class="section-image">
-                    <img src="../imges/second.jpeg" alt="Luxury red sports car interior and elegant showroom"
-                        loading="eager">
-                </div>
-                <div class="section-text">
-                    <div class="section-icon"><i class="fas fa-car-side"></i></div>
+            </article>
+            <article class="article reverse">
+                <div class="text">
                     <h2>Wide Range of Vehicles</h2>
-                    <p>Our showroom features from the world's leading manufacturers. Whether you're looking for a luxury
-                        sedan, a powerful SUV, a sports car, or an economical city car, we have the perfect vehicle for
-                        you.</p>
-                    <p>We update our inventory weekly to bring you the latest models and the best deals on vehicles.
-                        Every car on our lot is hand-selected for quality and value, ensuring you drive away with
-                        confidence.</p>
-                    <p><i class="fas fa-gem" style="color:#ff9;"></i> <strong>Premium selection</strong> including
-                        Mercedes-Benz, BMW, Lamborghini &amp; more.</p>
+                    <p>Our showroom features from the world's leading manufacturers. Whether you're looking for a luxury sedan, a powerful SUV, a sports car, or an economical city car, we have the perfect vehicle for you.</p>
+                    <p>We update our inventory weekly to bring you the latest models and the best deals on vehicles. Every car on our lot is hand-selected for quality and value, ensuring you drive away with confidence.</p>
+                    <p> <strong>Premium selection</strong> including Mercedes-Benz, BMW, Porsche & more.</p>
                 </div>
-            </div>
-
-
-            <div class="section">
-                <div class="section-text">
-                    <div class="section-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h2>Quality &amp; Trust</h2>
-                    <p>Before any car reaches our showroom floor, it undergoes a <strong>120-point technical
-                            inspection</strong>. We check the engine, transmission, brakes, electrical systems, and body
+                <div class="image">
+                    <img src="../imges/second.jpeg" alt="Car Selection">
+                </div>
+            </article>
+            <article class="article">
+                <div class="text">
+                    <h2>Quality & Trust</h2>
+                    <p>Before any car reaches our showroom floor, it undergoes a <strong>120-point technical                            inspection</strong>. We check the engine, transmission, brakes, electrical systems, and body
                         condition to ensure everything works perfectly.</p>
-                    <p>You also get a <strong>complete vehicle history report</strong> showing accidents, mileage
-                        history, and previous maintenance records. No hidden surprises – just honest cars at fair prices
+                    <p>You also get a <strong>complete vehicle history report</strong> showing accidents, mileagehistory, and previous maintenance records. No hidden surprises – just honest cars at fair prices
                         backed by an extended warranty option.</p>
-                    <div class="trust-badge">
-                        <i class="fas fa-handshake"></i> 100% transparency – independent inspection welcome
+                        <div class="trust-badge">
+                     100% transparency  independent inspection welcome
                     </div>
                 </div>
-                <div class="section-image">
-                    <img src="../imges/third.jpeg" alt="Car mechanic performing quality inspection" loading="eager">
+                <div class="image">
+                    <img src="../imges/third.jpeg" alt="Car Quality">
                 </div>
+            </article>
             </div>
-
-
             <div class="social-icons">
                 <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://web.whatsapp.com/" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
-
-            <a href="../html files/contact.html" class="btn-cta"><i class="fas fa-phone-alt"
-                    style="margin-right: 8px;"></i>  Book a Test Drive Now</a>
-
+        </section>
         </div>
-    </div>
-    <footer>
-        <div class="footer-links-container">
-            <div class="footer-column">
-                <h3>About us</h3>
-                <ul>
-                    <li><a href="../html files/team.html">Our team</a></li>
-                    <li><a href="#">Browse Inventory</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Our story</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
+        <footer>
+            <div class="footer-links-container">
+                <div class="footer-column">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="../html files/team.html">Our team</a></li>
+                        <li><a href="#">Browse Inventory</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="../html files/contact.html">Contact us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Track order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Follow on Instagram</a></li>
+                        <li><a href="#">Follow on Facebook</a></li>
+                        <li><a href="#">Follow on Twitter</a></li>
+                        <li><a href="#">Follow on TikTok</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="footer-column">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="../html files/contact.html">Contact us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping info</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Track order</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Cookie policy</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Offers</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Connect</h3>
-                <ul>
-                    <li><a href="#">Follow on Instagram</a></li>
-                    <li><a href="#">Follow on Facebook</a></li>
-                    <li><a href="#">Follow on Twitter</a></li>
-                    <li><a href="#">Follow on TikTok</a></li>
-                    <li><a href="#">Subscribe</a></li>
-                </ul>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Luxury Cars. All rights reserved.</p>
         </div>
     </footer>
-    <script src="../js file/globe.js"></script>
+     <script src="../js file/globe.js"></script>
     <script src="../js file/scriptHome.js"></script>
-
-
-</body>
-
-
     </body>
-
 </html>
