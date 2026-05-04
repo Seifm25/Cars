@@ -359,6 +359,11 @@ body.lightMode:has(.carView){
     background: linear-gradient(to right, #992219, white) !important;
     direction: ltr;
 }
+body.lightMode.ms.bottom-card p, 
+body.lightMode.ms.right-card p,
+body.lightMode.ms.left-card p {
+    color: white !important;
+}
 
 body.lightMode:has(.carView) #theme-switch {
     left: auto !important;
