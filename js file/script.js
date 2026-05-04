@@ -64,7 +64,7 @@ document.forms[1].onsubmit = function(event) {
     }
      else {
        
-        window.location.href = "home.html";
+        window.location.href = "index.html";
         event.preventDefault(); 
     }
 };
