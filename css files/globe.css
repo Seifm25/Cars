@@ -333,6 +333,8 @@ body.lightMode #searchInput {
     background: white !important;
     color: black !important;
     border: 1px solid #992219 !important;
+    z-index: 1000 !important; 
+    pointer-events: auto !important;
 }
 body.lightMode #resultslist{
     top: 115px;
