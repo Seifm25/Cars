@@ -62,6 +62,11 @@ document.forms[1].onsubmit = function(event) {
         event.preventDefault();
         alert("Please fill in Email and Password for Sign In!");
     }
+     else {
+       
+        window.location.href = "home.html";
+        event.preventDefault(); 
+    }
 };
 const userrInput=document.querySelector("[name='username']");
 const emaiilInput=document.querySelector("[name='email']");
