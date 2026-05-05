@@ -522,6 +522,9 @@ footer {
 @media screen and (max-width:600px) {
      .search-box {
         display: flex;
+        margin-right: 39px;
+        position: relative;
+        z-index: 10000;
 
     }
 }
