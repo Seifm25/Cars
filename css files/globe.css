@@ -348,6 +348,7 @@ body.lightMode .social-icons a.icon:hover i{
 @keyframes bounce{
     from{transform:translateY(0);}
     to{transform:translateY(-5px);}
+    
 }
 
 body.lightMode .top-right-auth {
