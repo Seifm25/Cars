@@ -341,6 +341,14 @@ body.lightMode #resultslist{
     right: 110px;
     background: var(--nav-links-backhover);
 }
+body.lightMode .social-icons a.icon:hover i{
+    color:#0021ff;
+    animation:bounce 0.5s infinite alternate;
+}
+@keyframes bounce{
+    from{transform:translateY(0);}
+    to{transform:translateY(-5px);}
+}
 
 body.lightMode .top-right-auth {
     right: auto !important;
