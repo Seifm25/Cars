@@ -97,10 +97,11 @@ body.lightMode .light-icon {
 body.lightMode .dark-icon {
     display: block;
     filter: invert(1);
+    z-index: 1000;
 }
 
 body.lightMode {
-    
+
     --text: black;
     --navshadow: rgba(0, 0, 0, 0.2);
     --nav-links-backhover: #4d3b3bd4;
@@ -222,6 +223,9 @@ body.lightMode .container input:focus {
 body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
+body.lightMode .social-icons a.icon:hover i {
+    color: var(--sochov);
+}
 
 body.lightMode .toggle {
     background: linear-gradient(to left, #c13b3b, #8d2a39) !important;
@@ -262,8 +266,10 @@ body.lightMode .custom-list li {
 
 body.lightMode .social-icons a {
     background: white !important;
-    color: #c13b3b !important;
     border: 1px solid #c13b3b !important;
+}
+body.lightMode .social-icons a:hover {
+    color: var(--sochov) !important;
 }
 
 body.lightMode:has(.about-container) .about-badge {
@@ -271,6 +277,9 @@ body.lightMode:has(.about-container) .about-badge {
     color: #000000 !important;
     border: 1px solid rgba(218, 85, 85, 0.412);
 
+}
+body.lightMode .menu {
+    display: none !important;
 }
 
 body.lightMode .nav-links {
@@ -291,10 +300,6 @@ body.lightMode .nav-links {
 
 }
 
-body.lightMode .menu {
-    display: none !important;
-}
-
 body.lightMode .nav-links a {
     color: black !important;
     margin: 0 20px !important;
@@ -312,53 +317,45 @@ body.lightMode .dropdown-content {
     z-index: 999;
 }
 
-body.lightMode .top-right-auth,
 body.lightMode #theme-switch {
     position: absolute !important;
     top: 80px !important;
+    left: auto !important;
+    right: 20px !important;
 }
-body.lightMode .search-box img {
-    position: absolute !important;
+body.lightMode .top-right-auth {
+    position: fixed !important;
+    right: auto !important;
+    left: 20px !important;
     top: 80px !important;
-    right: 70px !important; 
-    margin: 0 !important; 
-    filter: brightness(0) !important; 
-    width: 35px !important; 
 }
+
+body.lightMode .search-box img {
+    position: fixed;
+    top: 80px !important;
+    right: 70px !important;
+    margin: 0 !important;
+    filter: brightness(0) !important;
+    width: 35px !important;
+}
+
 body.lightMode #searchInput {
-    position: absolute !important;
+    position: fixed;
     top: 75px !important;
     right: 110px !important;
     margin: 0 !important;
     background: white !important;
     color: black !important;
     border: 1px solid #992219 !important;
-    z-index: 1000 !important; 
+    z-index: 1000 !important;
     pointer-events: auto !important;
 }
-body.lightMode #resultslist{
+
+body.lightMode #resultslist {
     top: 115px;
     right: 110px;
     background: var(--nav-links-backhover);
-}
-body.lightMode .social-icons a.icon:hover i{
-    color:#0021ff;
-    animation:bounce 0.5s infinite alternate;
-}
-@keyframes bounce{
-    from{transform:translateY(0);}
-    to{transform:translateY(-5px);}
-    
-}
-
-body.lightMode .top-right-auth {
-    right: auto !important;
-    left: 20px !important;
-}
-
-body.lightMode #theme-switch {
-    left: auto !important;
-    right: 20px !important;
+    position: fixed;
 }
 
 body.lightMode:has(.specials) {
@@ -366,11 +363,12 @@ body.lightMode:has(.specials) {
     direction: rtl;
 }
 
-body.lightMode:has(.carView){
+body.lightMode:has(.carView) {
     background: linear-gradient(to right, #992219, white) !important;
     direction: ltr;
 }
-body.lightMode.ms.bottom-card p, 
+
+body.lightMode.ms.bottom-card p,
 body.lightMode.ms.right-card p,
 body.lightMode.ms.left-card p {
     color: white !important;
