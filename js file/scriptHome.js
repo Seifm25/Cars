@@ -41,8 +41,8 @@ function openSearch() {
   const btn = document.getElementById("searchBtn");
   const input = document.getElementById("searchInput");
 
-  btn.style.display = "none";    
-  input.style.display = "block"; 
+  
+  input.style.display = "inline"; 
   input.focus();
 }
 
