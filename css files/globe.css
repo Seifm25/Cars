@@ -139,7 +139,6 @@ body.lightMode .nav-links a:hover {
 
 body.lightMode:has(.contact-container) {
     background: linear-gradient(rgb(237 234 234 / 79%), rgb(239 8 8 / 79%)), url(../imges/mercedes1.jpeg);
-    filter: blur(8px);
     background-size: cover;
     background-position: center;
     direction: rtl;
