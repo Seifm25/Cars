@@ -221,9 +221,9 @@ body.lightMode .container input:focus {
 body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
-/* body.lightMode .social-icons a.icon:hover i {
+ body.lightMode .social-icons a.icon:hover i {
     color: var(--sochov);
-} */
+} 
 
 body.lightMode .toggle {
     background: linear-gradient(to left, #c13b3b, #8d2a39) !important;
