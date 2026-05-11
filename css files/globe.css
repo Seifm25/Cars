@@ -262,14 +262,6 @@ body.lightMode .custom-list li {
     color: #000000 !important;
 }
 
-body.lightMode .social-icons a {
-    background: white !important;
-    border: 1px solid #c13b3b !important;
-}
-/* body.lightMode .social-icons a:hover {
-    color: var(--sochov) !important;
-} */
-
 body.lightMode:has(.about-container) .about-badge {
     background: #9b261e4f !important;
     color: #000000 !important;
