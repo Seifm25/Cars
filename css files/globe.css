@@ -174,8 +174,7 @@ body.lightMode textarea {
 
 .input-wrapper input:focus,
 textarea:focus {
-    border-color: #ff0000;
-
+    border-color:#992219 !important;
 }
 
 body.lightMode:has(#container) {
@@ -222,9 +221,9 @@ body.lightMode .container input:focus {
 body.lightMode .social-icons a {
     border-color: #992219 !important;
 }
-body.lightMode .social-icons a.icon:hover i {
+/* body.lightMode .social-icons a.icon:hover i {
     color: var(--sochov);
-}
+} */
 
 body.lightMode .toggle {
     background: linear-gradient(to left, #c13b3b, #8d2a39) !important;
@@ -261,14 +260,6 @@ body.lightMode .tagline,
 body.lightMode .section-text h2,
 body.lightMode .custom-list li {
     color: #000000 !important;
-}
-
-body.lightMode .social-icons a {
-    background: white !important;
-    border: 1px solid #c13b3b !important;
-}
-body.lightMode .social-icons a:hover {
-    color: var(--sochov) !important;
 }
 
 body.lightMode:has(.about-container) .about-badge {
@@ -317,7 +308,7 @@ body.lightMode .dropdown-content {
 }
 
 body.lightMode #theme-switch {
-    position: absolute !important;
+    position: fixed !important;
     top: 80px !important;
     left: auto !important;
     right: 20px !important;
