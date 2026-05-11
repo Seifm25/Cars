@@ -135,6 +135,9 @@ body.lightMode .video-container::after {
 body.lightMode .nav-links a:hover {
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    padding-left:30px !important;
+    padding-right:30px !important;
+    border-radius: 10px !important;
 }
 
 body.lightMode:has(.contact-container) {
