@@ -148,6 +148,10 @@ textarea:focus {
     color: #888;
     margin-top: 5px;
 }
+.checkbox-group #privacy 
+{
+    cursor:pointer;
+}
 
 .checkbox-group {
     margin: 15px 0;
